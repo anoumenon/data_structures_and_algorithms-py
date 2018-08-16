@@ -10,6 +10,9 @@ person = 'Jason Burns'
 
 2. [insert_shift_arr](#insert_shift_arr)
 3. [array_binary_search](#array_binary_search)
+4. [matrix_rotate](#matrix_rotate)
+5. [nth_fibonacci](#nth_fibonacci)
+
 
 ---
 
@@ -41,6 +44,31 @@ person = 'Jason Burns'
 
 ---
 
+<a id="matrix_rotate"></a>
+### 4. matrix_rotate <br>
+
+>Ask the candidate to write a function to rotate a 3x3 matrix (an array of integers), by 90 degrees clockwise.
+
+[link: coded solution](https://github.com/jasonb315/data_structures_and_algorithms/tree/master/challenges/matrix_rotate)
+
+![title](https://github.com/jasonb315/data_structures_and_algorithms/blob/master/assets/02_matrix_rotate.jpg) <br>
+
+[:top: Contents](#contents)
+
+---
+
+<a id="nth_fibonacci"></a>
+### 5. nth_fibonacci <br>
+
+>Ask the candidate to write a function to accepts an integer, and returns the nth number in the Fibonacci sequence.
+
+[link: coded solution](https://github.com/jasonb315/data_structures_and_algorithms/tree/master/challenges/array_binary_search)
+
+![title](https://github.com/jasonb315/data_structures_and_algorithms/blob/master/assets/02_array_binary_search.jpg) <br>
+
+[:top: Contents](#contents)
+
+---
 
 
 <!--

@@ -24,7 +24,7 @@ person = 'Jason Burns'
 
 [link: coded solution](https://github.com/jasonb315/data_structures_and_algorithms/tree/master/challenges/reverse_array)
 
-![title](https://github.com/jasonb315/data_structures_and_algorithms/blob/master/assets/01_insert_shift_arr.jpg) <br>
+![title](https://github.com/jasonb315/data_structures_and_algorithms/blob/master/assets/reverse_array.jpg) <br>
 
 [:top: Contents](#contents)
 

@@ -8,11 +8,25 @@ person = 'Jason Burns'
 <a id="contents"></a>
 ### Contents <br>
 
+1. [reverse_arr](#reverse_arr)
 2. [insert_shift_arr](#insert_shift_arr)
 3. [array_binary_search](#array_binary_search)
 4. [matrix_rotate](#matrix_rotate)
 5. [nth_fibonacci](#nth_fibonacci)
 
+
+---
+
+<a id="reverse_arr"></a>
+### 1. reverse_arr <br>
+
+>Write a function called reverse_arr that takes an array as an argument and returns it in reverse.
+
+[link: coded solution](https://github.com/jasonb315/data_structures_and_algorithms/tree/master/challenges/reverse_array)
+
+![title](https://github.com/jasonb315/data_structures_and_algorithms/blob/master/assets/01_insert_shift_arr.jpg) <br>
+
+[:top: Contents](#contents)
 
 ---
 

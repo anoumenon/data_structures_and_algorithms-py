@@ -51,7 +51,7 @@ person = 'Jason Burns'
 
 [link: coded solution](https://github.com/jasonb315/data_structures_and_algorithms/tree/master/challenges/matrix_rotate)
 
-![title](https://github.com/jasonb315/data_structures_and_algorithms/blob/master/assets/02_matrix_rotate.jpg) <br>
+![title](https://github.com/jasonb315/data_structures_and_algorithms/blob/master/assets/matrix_rotate.jpg) <br>
 
 [:top: Contents](#contents)
 
@@ -62,9 +62,9 @@ person = 'Jason Burns'
 
 >Ask the candidate to write a function to accepts an integer, and returns the nth number in the Fibonacci sequence.
 
-[link: coded solution](https://github.com/jasonb315/data_structures_and_algorithms/tree/master/challenges/array_binary_search)
+[link: coded solution](https://github.com/jasonb315/data_structures_and_algorithms/tree/master/challenges/nth_fibonacci)
 
-![title](https://github.com/jasonb315/data_structures_and_algorithms/blob/master/assets/02_array_binary_search.jpg) <br>
+![title](https://github.com/jasonb315/data_structures_and_algorithms/blob/master/assets/nth%20fibonacci.jpg) <br>
 
 [:top: Contents](#contents)
 

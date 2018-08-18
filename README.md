@@ -6,7 +6,14 @@ person = 'Jason Burns'
 ```
 ---
 <a id="contents"></a>
+
 ### Contents <br>
+
+##### Data Structures <br>
+
+1. [single_linked_list](#single_linked_list)
+
+##### Algorithms <br>
 
 1. [reverse_arr](#reverse_arr)
 2. [insert_shift_arr](#insert_shift_arr)
@@ -14,6 +21,26 @@ person = 'Jason Burns'
 4. [matrix_rotate](#matrix_rotate)
 5. [nth_fibonacci](#nth_fibonacci)
 
+```python
+DATA STRUCTURES
+```
+
+<a id="single_linked_list"></a>
+### 1. single_linked_list <br>
+
+>Single direction linked list. Creates an empty linked list when instantiated.
+>Dunder methods: init, str, repr, len
+>Methods: prepend, append, find
+
+[link: coded solution](https://github.com/jasonb315/data_structures_and_algorithms/tree/master/challenges/reverse_array)
+
+[:top: Contents](#contents)
+
+---
+
+```python
+ALGORITHIMS
+```
 
 ---
 

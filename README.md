@@ -21,9 +21,12 @@ person = 'Jason Burns'
 4. [matrix_rotate](#matrix_rotate)
 5. [nth_fibonacci](#nth_fibonacci)
 
+---
+
 ```python
 DATA STRUCTURES
 ```
+---
 
 <a id="single_linked_list"></a>
 ### 1. single_linked_list <br>

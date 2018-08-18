@@ -32,7 +32,7 @@ DATA STRUCTURES
 >Dunder methods: init, str, repr, len
 >Methods: prepend, append, find
 
-[link: coded solution](https://github.com/jasonb315/data_structures_and_algorithms/tree/master/challenges/reverse_array)
+[link: code](https://github.com/jasonb315/data_structures_and_algorithms/tree/master/data_structures/linked_lists)
 
 [:top: Contents](#contents)
 

@@ -28,9 +28,9 @@ DATA STRUCTURES
 <a id="single_linked_list"></a>
 ### 1. single_linked_list <br>
 
->Single direction linked list. Creates an empty linked list when instantiated.
->Dunder methods: init, str, repr, len
->Methods: prepend, append, find
+>Single direction linked list. Creates an empty linked list when instantiated.<br>
+>Dunder methods: init, str, repr, len<br>
+>Methods: prepend, append, find<br>
 
 [link: code](https://github.com/jasonb315/data_structures_and_algorithms/tree/master/data_structures/linked_lists)
 

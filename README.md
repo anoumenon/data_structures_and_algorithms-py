@@ -31,11 +31,15 @@ DATA STRUCTURES
 <a id="single_linked_list"></a>
 ### 1. single_linked_list <br>
 
->Single direction linked list. Creates an empty linked list when instantiated.<br>
->Dunder methods: init, str, repr, len<br>
->Methods: prepend, append, find<br>
+>Single direction linked list class.<br>
+
+>Methods: prepend, append, includes, read_off, insert_before, insert_after<br>
 
 [link: code](https://github.com/jasonb315/data_structures_and_algorithms/tree/master/data_structures/linked_lists)
+
+![title](https://github.com/jasonb315/data_structures_and_algorithms/blob/master/assets/ll_append.jpg) <br>
+![title](https://github.com/jasonb315/data_structures_and_algorithms/blob/master/assets/ll_insert_before.jpg) <br>
+![title](https://github.com/jasonb315/data_structures_and_algorithms/blob/master/assets/ll_insert_after.jpg) <br>
 
 [:top: Contents](#contents)
 

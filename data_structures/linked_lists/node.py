@@ -1,4 +1,4 @@
-class ListNode(object):
+class Node(object):
     '''
     Node in a singly linked list.
     '''

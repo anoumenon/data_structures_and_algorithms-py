@@ -1,5 +1,4 @@
-from single_linked_list import LinkedList, ListNode
-
+from .linked_list import LinkedList
 import pytest
 
 

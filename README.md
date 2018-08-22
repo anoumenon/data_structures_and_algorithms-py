@@ -25,10 +25,11 @@ person = 'Jason Burns'
 
 ## DATA STRUCTURES
 
----
 
 <a id="single_linked_list"></a>
 ### 1. single_linked_list <br>
+
+[link: code](https://github.com/jasonb315/data_structures_and_algorithms/tree/master/data_structures/linked_lists)<br>
 
 Single direction linked list class.<br>
 
@@ -41,7 +42,7 @@ insert_before: create and attach a node with a passed value before a given value
 insert_after: create and attach a node with a passed value after a given value.<br>
 kth_from_end: print and return the value of a node a given number from the end.<br>
 
-[link: code](https://github.com/jasonb315/data_structures_and_algorithms/tree/master/data_structures/linked_lists)
+
 kth_from_end:
 ![kth_from_end](https://github.com/jasonb315/data_structures_and_algorithms/blob/master/assets/kth_from_end.jpg) <br>
 append:
@@ -57,7 +58,6 @@ insert_after:
 
 ## ALGORITHIMS
 
----
 
 <a id="reverse_arr"></a>
 ### 1. reverse_arr <br>

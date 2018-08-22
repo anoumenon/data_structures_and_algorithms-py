@@ -33,13 +33,14 @@ DATA STRUCTURES
 
 >Single direction linked list class.<br>
 
->Methods: prepend, append, includes, read_off, insert_before, insert_after<br>
+>Methods: prepend, append, includes, read_off, insert_before, insert_after, kth_from_end<br>
 
 [link: code](https://github.com/jasonb315/data_structures_and_algorithms/tree/master/data_structures/linked_lists)
 
-![title](https://github.com/jasonb315/data_structures_and_algorithms/blob/master/assets/ll_append.jpg) <br>
-![title](https://github.com/jasonb315/data_structures_and_algorithms/blob/master/assets/ll_insert_before.jpg) <br>
-![title](https://github.com/jasonb315/data_structures_and_algorithms/blob/master/assets/ll_insert_after.jpg) <br>
+![kth_from_end](https://github.com/jasonb315/data_structures_and_algorithms/blob/master/assets/kth_from_end.jpg) <br>
+![ll_append](https://github.com/jasonb315/data_structures_and_algorithms/blob/master/assets/ll_append.jpg) <br>
+![ll_insert_before](https://github.com/jasonb315/data_structures_and_algorithms/blob/master/assets/ll_insert_before.jpg) <br>
+![ll_insert_after](https://github.com/jasonb315/data_structures_and_algorithms/blob/master/assets/ll_insert_after.jpg) <br>
 
 [:top: Contents](#contents)
 

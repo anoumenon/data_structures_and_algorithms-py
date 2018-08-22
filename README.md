@@ -23,39 +23,46 @@ person = 'Jason Burns'
 
 ---
 
-```python
-DATA STRUCTURES
-```
+## DATA STRUCTURES
+
 ---
 
 <a id="single_linked_list"></a>
 ### 1. single_linked_list <br>
 
->Single direction linked list class.<br>
+Single direction linked list class.<br>
 
->Methods: prepend, append, includes, read_off, insert_before, insert_after, kth_from_end<br>
+Methods;<br>
+prepend: create and attach a node with a passed value to the head of the list.<br>
+append: create and attach a node with a passed value to the tail of the list.<br>
+includes: check the list for a given value. returns a bool.<br>
+read_off: prints a list of the values of the linked list in order from the head.<br>
+insert_before: create and attach a node with a passed value before a given value.<br>
+insert_after: create and attach a node with a passed value after a given value.<br>
+kth_from_end: print and return the value of a node a given number from the end.<br>
 
 [link: code](https://github.com/jasonb315/data_structures_and_algorithms/tree/master/data_structures/linked_lists)
-
+kth_from_end:
 ![kth_from_end](https://github.com/jasonb315/data_structures_and_algorithms/blob/master/assets/kth_from_end.jpg) <br>
+append:
 ![ll_append](https://github.com/jasonb315/data_structures_and_algorithms/blob/master/assets/ll_append.jpg) <br>
+insert_before:
 ![ll_insert_before](https://github.com/jasonb315/data_structures_and_algorithms/blob/master/assets/ll_insert_before.jpg) <br>
+insert_after:
 ![ll_insert_after](https://github.com/jasonb315/data_structures_and_algorithms/blob/master/assets/ll_insert_after.jpg) <br>
 
 [:top: Contents](#contents)
 
 ---
 
-```python
-ALGORITHIMS
-```
+## ALGORITHIMS
 
 ---
 
 <a id="reverse_arr"></a>
 ### 1. reverse_arr <br>
 
->Write a function called reverse_arr that takes an array as an argument and returns it in reverse.
+Write a function called reverse_arr that takes an array as an argument and returns it in reverse.
 
 [link: coded solution](https://github.com/jasonb315/data_structures_and_algorithms/tree/master/challenges/reverse_array)
 
@@ -68,9 +75,9 @@ ALGORITHIMS
 <a id="insert_shift_arr"></a>
 ### 2. insert_shift_arr <br>
 
->Write a function called insertShiftArray which takes in an array and the value to be added. Without utilizing any of the built-in methods available to your language, return an array with the new value added at the middle index.<br>
->IN [4,8,15,23,42], 16<br>
->OUT [4,8,15,16,23,42]<br>
+Write a function called insertShiftArray which takes in an array and the value to be added. Without utilizing any of the built-in methods available to your language, return an array with the new value added at the middle index.<br>
+IN [4,8,15,23,42], 16<br>
+OUT [4,8,15,16,23,42]<br>
 
 [link: coded solution](https://github.com/jasonb315/data_structures_and_algorithms/tree/master/challenges/array_shift)
 
@@ -83,7 +90,7 @@ ALGORITHIMS
 <a id="array_binary_search"></a>
 ### 3. array_binary_search <br>
 
->Write a function called BinarySearch which takes in 2 parameters: a sorted array and the search key. Without utilizing any of the built-in methods available to your language, return the index of the array’s element that is equal to the search key, or -1 if the element does not exist.
+Write a function called BinarySearch which takes in 2 parameters: a sorted array and the search key. Without utilizing any of the built-in methods available to your language, return the index of the array’s element that is equal to the search key, or -1 if the element does not exist.
 
 [link: coded solution](https://github.com/jasonb315/data_structures_and_algorithms/tree/master/challenges/array_binary_search)
 
@@ -96,7 +103,7 @@ ALGORITHIMS
 <a id="matrix_rotate"></a>
 ### 4. matrix_rotate <br>
 
->Ask the candidate to write a function to rotate a 3x3 matrix (an array of integers), by 90 degrees clockwise.
+Ask the candidate to write a function to rotate a 3x3 matrix (an array of integers), by 90 degrees clockwise.
 
 [link: coded solution](https://github.com/jasonb315/data_structures_and_algorithms/tree/master/challenges/matrix_rotate)
 
@@ -109,7 +116,7 @@ ALGORITHIMS
 <a id="nth_fibonacci"></a>
 ### 5. nth_fibonacci <br>
 
->Ask the candidate to write a function to accepts an integer, and returns the nth number in the Fibonacci sequence.
+Ask the candidate to write a function to accepts an integer, and returns the nth number in the Fibonacci sequence.
 
 [link: coded solution](https://github.com/jasonb315/data_structures_and_algorithms/tree/master/challenges/nth_fibonacci)
 

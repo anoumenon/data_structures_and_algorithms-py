@@ -17,6 +17,7 @@ def small_list():
     ll.append(4)
     return ll
 
+
 @pytest.fixture
 def med_list():
     jj = LinkedList()
@@ -31,11 +32,13 @@ def med_list():
     jj.append(9)
     return jj
 
+
 def test_linked_list_exists():
     '''
     Finds Fx
     '''
     assert LinkedList
+
 
 def test_init_with_list():
     '''
@@ -43,6 +46,7 @@ def test_init_with_list():
     '''
     ll = LinkedList([1, 2, 3])
     assert ll.read_off() == [1, 2, 3]
+
 
 def test_create_instance_of_node():
     '''

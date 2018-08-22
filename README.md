@@ -20,6 +20,7 @@ person = 'Jason Burns'
 3. [array_binary_search](#array_binary_search)
 4. [matrix_rotate](#matrix_rotate)
 5. [nth_fibonacci](#nth_fibonacci)
+6. [merge_lists](#merge_lists)
 
 ---
 
@@ -29,9 +30,9 @@ person = 'Jason Burns'
 <a id="single_linked_list"></a>
 ### 1. single_linked_list <br>
 
-[link: code](https://github.com/jasonb315/data_structures_and_algorithms/tree/master/data_structures/linked_lists)<br>
-
 Single direction linked list class.<br>
+
+[link: code](https://github.com/jasonb315/data_structures_and_algorithms/tree/master/data_structures/linked_lists)<br>
 
 Methods;<br>
 prepend: create and attach a node with a passed value to the head of the list.<br>
@@ -126,7 +127,18 @@ Ask the candidate to write a function to accepts an integer, and returns the nth
 
 ---
 
+<a id="merge_lists"></a>
+### 6. merge_lists <br>
 
+Write a function called mergeLists which takes two linked lists as arguments. Zip the two linked lists together into one so that the nodes alternate between the two lists and return a reference to the head of the zipped list. Try and keep additional space down to O(1). You have access to the Node class and all the properties on the Linked List class as well as the methods created in previous challenges.
+
+[link: coded solution](https://github.com/jasonb315/data_structures_and_algorithms/tree/master/challenges/ll_merge)
+
+![title](https://github.com/jasonb315/data_structures_and_algorithms/blob/master/assets/ll_merge.jpg) <br>
+
+[:top: Contents](#contents)
+
+---
 <!--
 <a id="NAME"></a>
 ### X. NAME <br>

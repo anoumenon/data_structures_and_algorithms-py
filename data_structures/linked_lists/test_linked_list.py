@@ -17,6 +17,20 @@ def small_list():
     ll.append(4)
     return ll
 
+@pytest.fixture
+def med_list():
+    jj = LinkedList()
+    jj.append(1)
+    jj.append(2)
+    jj.append(3)
+    jj.append(4)
+    jj.append(5)
+    jj.append(6)
+    jj.append(7)
+    jj.append(8)
+    jj.append(9)
+    return jj
+
 def test_linked_list_exists():
     '''
     Finds Fx
@@ -138,3 +152,27 @@ def test_includes_returns_false_if_not_exists(small_list):
     actual = small_list.includes('American soverignty')
     assert actual is False
     assert small_list.includes('American soverignty') is False
+
+
+def test_kth_reads(med_list):
+    '''
+    Check itteration and accurate return
+    '''
+    actual = med_list.kth_from_end(4)
+    assert actual == 5
+
+
+def test_kth_reads_head(med_list):
+    '''
+    Check itteration and accurate return of head node
+    '''
+    actual = med_list.kth_from_end(8)
+    assert actual == 1
+
+
+def test_kth_reads_tail(med_list):
+    '''
+    Check itteration and accurate return of tail node
+    '''
+    actual = med_list.kth_from_end(0)
+    assert actual == 9

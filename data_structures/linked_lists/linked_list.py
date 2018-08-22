@@ -7,10 +7,16 @@ class LinkedList(object):
     Singly linked list creation.
     O(1) time.
     '''
-    def __init__(self):
-
+    def __init__(self, iterable=[]):
+        '''
+        Initialized the list with a set of values, contained in an iterable.
+        O(n) time.
+        '''
         self._head = None
         self._length = 0
+
+        for e in iterable:
+            self.append(e)
 
     def __str__(self):
         return f'Head: {self._head} | Length: {self._length}'
@@ -142,3 +148,24 @@ class LinkedList(object):
                         curr._next = Node(i_data, curr._next)
                         self._length += 1
                     curr = curr._next
+
+    def kth_from_end(self, k):
+        '''
+        Moves down the linked list to find a node that is k pisitions from the tail of the list.
+        tortise and hare solution.
+        O(n) time.
+        '''
+
+        t = self._head
+        h = self._head
+
+        for i in range(k):
+            if h is not None:
+                h = h._next
+            else:
+                raise IndexError
+
+        while h._next is not None:
+            t = t._next
+            h = h._next
+        return t._data

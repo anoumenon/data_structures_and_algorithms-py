@@ -17,13 +17,18 @@ def small_list():
     ll.append(4)
     return ll
 
-
 def test_linked_list_exists():
     '''
     Finds Fx
     '''
     assert LinkedList
 
+def test_init_with_list():
+    '''
+    Check init with input list
+    '''
+    ll = LinkedList([1, 2, 3])
+    assert ll.read_off() == [1, 2, 3]
 
 def test_create_instance_of_node():
     '''

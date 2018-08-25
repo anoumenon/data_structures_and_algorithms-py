@@ -14,9 +14,9 @@ class LinkedList(object):
         '''
         self._head = None
         self._length = 0
-
-        for e in iterable:
-            self.append(e)
+        if len(iterable) >= 1:
+            for e in iterable:
+                self.append(e)
 
     def __str__(self):
         return f'Head: {self._head} | Length: {self._length}'
@@ -113,7 +113,7 @@ class LinkedList(object):
     def insert_before(self, i_data, s_data):
         '''
         Add a new node with the given i_data immediately
-        after the first s_data node
+        before the first s_data node
         O(n) time.
         '''
         if self._head is not None:
@@ -140,17 +140,15 @@ class LinkedList(object):
         '''
         if self._head is not None:
 
-            if self._head._data == s_data:
-                self._head._next = Node(i_data, self._head._next)
-                self._length += 1
+            n = Node(i_data)
+            curr = self._head
 
-            else:
-                curr = self._head
-                while curr:
-                    if curr._data == s_data:
-                        curr._next = Node(i_data, curr._next)
-                        self._length += 1
-                    curr = curr._next
+            while curr:
+                if curr._data == s_data:
+                    n._next = curr._next
+                    curr._next = n
+                    self._length += 1
+                curr = curr._next
 
     def kth_from_end(self, k):
         '''

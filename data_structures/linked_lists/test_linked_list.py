@@ -180,3 +180,57 @@ def test_kth_reads_tail(med_list):
     '''
     actual = med_list.kth_from_end(0)
     assert actual == 9
+
+
+def test_insert_before(small_list):
+    '''
+    prepending when list has nodes, adds as head
+    '''
+    assert small_list.read_off() == [1, 2, 3, 4]
+    small_list.insert_before('x', 2)
+    assert small_list.read_off() == [1, 'x', 2, 3, 4]
+
+
+def test_insert_before_head(small_list):
+    '''
+    prepending when list has nodes, adds as head
+    '''
+    assert small_list.read_off() == [1, 2, 3, 4]
+    small_list.insert_before('x', 1)
+    assert small_list.read_off() == ['x', 1, 2, 3, 4]
+
+
+def test_insert_before_tail(small_list):
+    '''
+    prepending when list has nodes, adds as head
+    '''
+    assert small_list.read_off() == [1, 2, 3, 4]
+    small_list.insert_before('x', 4)
+    assert small_list.read_off() == [1, 2, 3, 'x', 4]
+
+
+def test_insert_after(small_list):
+    '''
+    prepending when list has nodes, adds as head
+    '''
+    assert small_list.read_off() == [1, 2, 3, 4]
+    small_list.insert_after('x', 2)
+    assert small_list.read_off() == [1, 2, 'x', 3, 4]
+
+
+def test_insert_after_head(small_list):
+    '''
+    prepending when list has nodes, adds as head
+    '''
+    assert small_list.read_off() == [1, 2, 3, 4]
+    small_list.insert_after('x', 1)
+    assert small_list.read_off() == [1, 'x', 2, 3, 4]
+
+
+def test_insert_after_tail(small_list):
+    '''
+    prepending when list has nodes, adds as head
+    '''
+    assert small_list.read_off() == [1, 2, 3, 4]
+    small_list.insert_after('x', 4)
+    assert small_list.read_off() == [1, 2, 3, 4,'x']

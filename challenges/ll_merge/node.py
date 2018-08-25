@@ -11,4 +11,4 @@ class Node(object):
         return f'{self.data}'
 
     def __repr__(self):
-        return f'<Node | data: {self.data} | Next: {self._next}>'
+        return f'<Node | data: {self._data} | Next: {self._next}>'

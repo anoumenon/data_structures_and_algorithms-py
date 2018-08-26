@@ -25,6 +25,16 @@ class LinkedList(object):
         return f'<Linked List | Head: {self._head} | Length: {self._length}>'
 
     def __len__(self):
+        """
+        Returns the length of the linked list.
+        O(n) time
+        """
+        curr = self._head
+        count = 0
+        while curr:
+            count += 1
+            curr = curr._next
+
         return self._length
 
     # def __iter__(self):
@@ -157,6 +167,10 @@ class LinkedList(object):
         tortise and hare solution.
         O(n) time.
         '''
+
+        if k < 0:
+            print('Cheeky Bugger: K out of range.')
+            return IndexError
 
         t = self._head
         h = self._head

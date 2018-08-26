@@ -182,6 +182,14 @@ def test_kth_reads_tail(med_list):
     assert actual == 9
 
 
+def test_kth_rejects_neg(med_list):
+    '''
+    Check itteration and accurate return of tail node
+    '''
+    actual = med_list.kth_from_end(-1)
+    assert actual == IndexError
+
+
 def test_insert_before(small_list):
     '''
     prepending when list has nodes, adds as head
@@ -233,4 +241,4 @@ def test_insert_after_tail(small_list):
     '''
     assert small_list.read_off() == [1, 2, 3, 4]
     small_list.insert_after('x', 4)
-    assert small_list.read_off() == [1, 2, 3, 4,'x']
+    assert small_list.read_off() == [1, 2, 3, 4, 'x']

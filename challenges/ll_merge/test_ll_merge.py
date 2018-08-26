@@ -1,4 +1,5 @@
 from .linked_list import LinkedList
+
 from .ll_merge import merge_lists
 import pytest
 
@@ -51,9 +52,44 @@ def test_merge_function_exists():
     assert merge_lists
 
 
-def test_Index_error_for_empty_lists(empty_list, empty_list2):
+def test_equal_length_lists(list_a_short, list_b_short):
     '''
-    If passed two empty lists
+    Standard merge given two short lists
     '''
     merged = merge_lists(list_a_short, list_b_short)
-    assert merged == 'No nodes to test'
+    read = merged.read_off()
+    assert read == (['a', 1, 'b', 2, 'c', 3])
+
+
+def test_list_one_longer(list_a_long, list_b_short):
+    '''
+    Standard merge given a long and short list
+    '''
+    merged = merge_lists(list_a_long, list_b_short)
+    read = merged.read_off()
+    assert read == (['a', 1, 'b', 2, 'c', 3, 'd', 'e', 'f', 'g'])
+
+
+def test_list_two_longer(list_a_short, list_b_long):
+    '''
+    Standard merge given a long and short list
+    '''
+    merged = merge_lists(list_a_short, list_b_long)
+    read = merged.read_off()
+    assert read == (['a', 1, 'b', 2, 'c', 3, 4, 5, 6, 7])
+
+
+def test_empty_first_list(empty_list, list_a_short):
+    '''
+    Standard merge given a long and short list
+    '''
+    merged = merge_lists(empty_list, list_a_short)
+    assert merged == 'first list empty'
+
+
+def test_empty_second_list(list_a_short, empty_list):
+    '''
+    Standard merge given a long and short list
+    '''
+    merged = merge_lists(list_a_short, empty_list)
+    assert merged == 'second list empty'

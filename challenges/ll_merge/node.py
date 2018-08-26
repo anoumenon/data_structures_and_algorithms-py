@@ -8,7 +8,7 @@ class Node(object):
         self._next = _next
 
     def __data__(self):
-        return f'{self.data}'
+        return f'{self._data}'
 
     def __repr__(self):
         return f'<Node | data: {self._data} | Next: {self._next}>'

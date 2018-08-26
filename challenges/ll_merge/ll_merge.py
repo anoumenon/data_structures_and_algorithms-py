@@ -1,47 +1,45 @@
-from .linked_list import LinkedList
-
-ll_a = LinkedList(['a', 'b', 'c', 'd', 'e'])
-ll_b = LinkedList([1, 2, 3, 4, 5])
-
-
 def merge_lists(a, b):
+    '''
+    Merge two lists into a new list.
+    O(1) space: mutates lists in place.
+    '''
+    if a._head:
+        curr_a = a._head
+    else:
+        return'first list empty'
 
-    # handle if one or both lists are empty
-    if a._head is None and b._head is None:
-        return('Empty Lists')
-    elif a._head is None:
-        return b._head
-    elif b._head is None:
-        return a._head
+    if b._head:
+        curr_b = b._head
+    else:
+        return'second list empty'
 
-    # sets segment around zip point
-    a_pos = a._head
-    b_pos = b._head
-    a_cache = a._head._next
-    b_cache = b._head._next
+    next_a = None
+    next_b = None
 
-    while a_pos is not None and b_pos is not None:
+    return_list = a
 
-        # handles first step of zip provided two nodes
-        a_pos._next = b_pos
+    while curr_a and curr_b:
 
-        # handles the case where each l.list is one node
-        if a_cache is None and b_cache is None:
-            return a._head
+        if curr_a._next:
+            next_a = curr_a._next
+        if curr_b._next:
+            next_b = curr_b._next
 
-        # handles the case where a is longer
-        if a_cache is not None and b_cache is None:
-            b_pos._next = a_cache
-            return a._head
+        curr_a._next = curr_b
+        if next_a:
+            curr_b._next = next_a
 
-        # handles the case where b is longer
-        if b_cache is not None and a_cache is None:
-            return a._head
+        curr_a = next_a
+        curr_b = next_b
 
-        b_pos._next = a_cache
+        if next_a and next_a._next:
+            next_a = next_a._next
+        else:
+            next_a = None
 
-        # moves to the next zip segment provied full segment avaliable
-        a_pos = a_cache
-        b_pos = b_cache
-        a_cache = a_pos._next
-        b_cache = b_pos._next
+        if next_b and next_b._next:
+            next_b = next_b._next
+        else:
+            next_b = None
+
+    return return_list

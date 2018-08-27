@@ -12,6 +12,8 @@ person = 'Jason Burns'
 ##### Data Structures <br>
 
 1. [single_linked_list](#single_linked_list)
+2. [stack](#stack)
+3. [queue](#queue)
 
 ##### Algorithms <br>
 
@@ -56,6 +58,46 @@ insert_after:
 [:top: Contents](#contents)
 
 ---
+
+<a id="stack"></a>
+### 2. stack <br>
+
+Single direction linked list class for use as a stack.<br>
+
+[link: code](https://github.com/jasonb315/data_structures_and_algorithms/tree/master/data_structures/stack)<br>
+
+In stack.py:
+Create a Class for a Stack which creates an empty Stack when instantiated
+This class should be aware of a default None value assigned to top when the isntance is created
+This class should be aware of the len of the stack, which represents the count of Nodes in the stack at any time
+This class should have the ability to accept an iterable as an argument when instantiated, such as [1, 2, 3, 4], and creates a new Node in the stack for each value in the iterable
+Define any further magic methods such as len and str to support user functionality and informative responses
+Define a method called push which takes any value as an argument and adds that value to the top of the stack with an O(1) Time performance
+Define a method called pop which takes no arguments and removes / returns the Node at the top of the stack
+Define a method called peek which takes no arguments and returns the Node at the top of the stack
+
+---
+
+
+<a id="queue"></a>
+### 1. queue <br>
+
+Double linked list class for use as a queue.<br>
+
+[link: code](https://github.com/jasonb315/data_structures_and_algorithms/tree/master/data_structures/linked_queue)<br>
+
+In queue.py:
+Create a Class for a Queue which creates an empty Queue when instantiated
+This class should be aware of a default None value assigned to front when the isntance is created
+This class should be aware of a default None value assigned to back when the isntance is created
+This class should be aware of the len of the queue, which represents the count of Nodes in the queue at any time
+This class should have the ability to accept an iterable as an argument when instantiated, such as [1, 2, 3, 4], and creates a new Node in the queue for each value in the iterable
+Define any further magic methods such as len and str to support user functionality and informative responses
+Define a method called enqueue which takes any value as an argument and adds that value to the back of the queue with an O(1) Time performance
+Define a method called dequeue which takes no arguments and removes / returns the Node at the front of the queue
+
+---
+
 
 ## ALGORITHIMS
 

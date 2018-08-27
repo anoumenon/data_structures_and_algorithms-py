@@ -23,6 +23,7 @@ person = 'Jason Burns'
 4. [matrix_rotate](#matrix_rotate)
 5. [nth_fibonacci](#nth_fibonacci)
 6. [merge_lists](#merge_lists)
+7. [queue_with_stacks](#queue_with_stacks)
 
 ---
 
@@ -177,6 +178,21 @@ Write a function called mergeLists which takes two linked lists as arguments. Zi
 [link: coded solution](https://github.com/jasonb315/data_structures_and_algorithms/tree/master/challenges/ll_merge)
 
 ![title](https://github.com/jasonb315/data_structures_and_algorithms/blob/master/assets/ll_merge.jpg) <br>
+
+[:top: Contents](#contents)
+
+---
+
+<a id="queue_with_stacks"></a>
+### 6. queue_with_stacks <br>
+
+Implement the following methods for the Queue class:
+
+enqueue(value) which inserts value into the Queue using a first-in, first-out approach.
+dequeue() which extracts a value from the Queue using a first-in, first-out approach.
+You have access to 2 Stack instances with push and pop methods.
+
+![title](https://github.com/jasonb315/data_structures_and_algorithms/blob/master/assets/queue_with_stacks.jpg) <br>
 
 [:top: Contents](#contents)
 

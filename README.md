@@ -84,7 +84,7 @@ Define a method called peek which takes no arguments and returns the Node at the
 
 Double linked list class for use as a queue.<br>
 
-[link: code](https://github.com/jasonb315/data_structures_and_algorithms/tree/master/data_structures/linked_queue)<br>
+[link: code](https://github.com/jasonb315/data_structures_and_algorithms/tree/master/data_structures/queue)<br>
 
 In queue.py:
 Create a Class for a Queue which creates an empty Queue when instantiated

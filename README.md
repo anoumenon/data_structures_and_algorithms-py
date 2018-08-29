@@ -24,6 +24,9 @@ person = 'Jason Burns'
 5. [nth_fibonacci](#nth_fibonacci)
 6. [merge_lists](#merge_lists)
 7. [queue_with_stacks](#queue_with_stacks)
+8. [fifo_animal_shelter](#fifo_animal_shelter)
+
+
 
 ---
 
@@ -184,7 +187,7 @@ Write a function called mergeLists which takes two linked lists as arguments. Zi
 ---
 
 <a id="queue_with_stacks"></a>
-### 6. queue_with_stacks <br>
+### 7. queue_with_stacks <br>
 
 Implement the following methods for the Queue class:
 
@@ -193,6 +196,22 @@ dequeue() which extracts a value from the Queue using a first-in, first-out appr
 You have access to 2 Stack instances with push and pop methods.
 
 ![title](https://github.com/jasonb315/data_structures_and_algorithms/blob/master/assets/queue_with_stacks.jpg) <br>
+
+[:top: Contents](#contents)
+
+---
+
+<a id="fifo_animal_shelter"></a>
+### 8. fifo_animal_shelter <br>
+
+Create a class called AnimalShelter which holds only dogs and cats. The shelter operates using a first-in, first-out approach.
+Implement the following methods:
+enqueue(animal): adds animal to the shelter. animal can be either a dog or a cat object.
+dequeue(pref): returns either a dog or a cat. If pref, a string, is ‘cat’ return the longest-waiting cat. If pref is ‘dog’, return the longest-waiting dog. For anything else, return either a cat or a dog.
+
+[link: coded solution](https://github.com/jasonb315/data_structures_and_algorithms/tree/master/challenges/fifo_animal_shelter)
+
+![title](https://github.com/jasonb315/data_structures_and_algorithms/blob/master/assets/fifo_animal_shelter.jpg) <br>
 
 [:top: Contents](#contents)
 

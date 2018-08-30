@@ -1,4 +1,4 @@
-from queue import Queue
+from a_queue import Queue
 
 
 class Shelter(object):

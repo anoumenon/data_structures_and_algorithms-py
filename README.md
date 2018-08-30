@@ -25,6 +25,7 @@ person = 'Jason Burns'
 6. [merge_lists](#merge_lists)
 7. [queue_with_stacks](#queue_with_stacks)
 8. [fifo_animal_shelter](#fifo_animal_shelter)
+9. [multi_bracket_validation](#multi_bracket_validation)
 
 
 
@@ -216,6 +217,24 @@ dequeue(pref): returns either a dog or a cat. If pref, a string, is ‘cat’ re
 [:top: Contents](#contents)
 
 ---
+
+<a id="multi_bracket_validation"></a>
+### 9. multi_bracket_validation <br>
+
+Your function should take a string as its only argument, and should return a boolean representing whether or not the brackets in the string are balanced. There are 3 types of brackets:
+
+Round Brackets : ()
+Square Brackets : []
+Curly Brackets : {}
+
+[link: coded solution](https://github.com/jasonb315/data_structures_and_algorithms/tree/master/challenges/multi_bracket_validation)
+
+![title](https://github.com/jasonb315/data_structures_and_algorithms/blob/master/assets/multi_bracket_validation.jpg) <br>
+
+[:top: Contents](#contents)
+
+---
+
 <!--
 <a id="NAME"></a>
 ### X. NAME <br>

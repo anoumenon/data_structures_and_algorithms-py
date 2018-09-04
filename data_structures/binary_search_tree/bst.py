@@ -1,66 +1,104 @@
 class Node(object):
     """
     BST node.
-    VAL for structure
-    DATA for information
-    LEFT and RIGHT children
     """
 
-    def __init__(self, val, data=None, left=None, right=None):
+    def __init__(self, val, data, left=None, right=None, parent=None):
+        """
+        BST node.
+        VAL for structure.
+        DATA for information.
+        LEFT and RIGHT children.
+        PARENT for preceeding node.
+        """
         self.val = val
         self.data = data
         self._left = left
         self._right = right
-        self._parent = None
+        self._parent = parent
 
     def __str__(self):
-        pass
+        """
+        return val and data of node
+        """
+        return(
+            f'''VAL:{self.val} | DATA:{self.data}'''
+        )
 
     def __repr__(self):
-        pass
+        """
+        return val and children
+        """
+        return f'<Node | VAL:{self.val} | L: {self._left} | R: {self._right}>'
 
 
 class BinaryTree:
-    def __init__(self, iterable=None):
+    """
+    Binary tree class.
+    """
+    def __init__(self, iterable=[]):
+        """
+        ROOT for head.
+        COUNT for number of nodes held.
+        """
         self.root = None
         self.count = 0
         for e in iterable:
-            self.__insert__(e[0], e[1])
+            self.insert(val=e[0], data=e[1])
 
-    def __str__(self):
-        pass
+    # def __str__(self):
+    #     """
+    #     return self information
+    #     """
+    #     return f'Root: {self.root} | Count: {self.count}'
 
-    def __repr__(self):
-        pass
+    # def __repr__(self):
+    #     """
+    #     return self information
+    #     """
+    #     return f'<Linked List | Root: {self.root} | Count: {self.count}>'
 
-    def __insert__(self, val, data):
-
+    def insert(self, val=None, data=None, iterable=[]):
+        """
+        Creates a root of absent.
+        Else, traverses by vals to append data.
+        """
+        
         if self.root is None:
             self.root = Node(val, data)
             self.count += 1
-            return
+            return self.root
 
         node = self.root
 
-        def _insert(node):
+        def _search_place(node, parent=None):
+            """
+            Called recursively to traverse and append.
+            """
+            # LEFT
             if val < node.val:
                 if node._left is None:
-                    node._left = Node(val, data)
+                    node._left = Node(val, data, parent=node)
                     self.count += 1
                     return
                 else:
-                    return _insert(node._left)
+                    return _search_place(node._left, node)
+            # RIGHT
             elif val > node.val:
                 if node._right is None:
-                    node._right = Node(val, data)
+                    node._right = Node(val, data, parent=node)
                     self.count += 1
                     return
                 else:
-                    return _insert(node._right)
+                    return _search_place(node._right, node)
+            # DUPLICATE
+            elif val == node.val:
+                return False
+            # EDGE
             else:
                 return False
 
-        _insert(node)
+        _search_place(node)
 
     def __inorder__(self, callable=lambda node: print(node)):
 
@@ -71,13 +109,13 @@ class BinaryTree:
             if node is None:
                 return
 
-            if node.left:
-                _walk(node.left)
+            if node._left:
+                _walk(node._left)
 
             callable(node)
 
-            if node.right:
-                _walk(node.right)
+            if node._right:
+                _walk(node._right)
 
         _walk(self.root)
 
@@ -92,11 +130,11 @@ class BinaryTree:
 
             callable(node)
 
-            if node.left:
-                _walk(node.left)
+            if node._left:
+                _walk(node._left)
 
-            if node.right:
-                _walk(node.right)
+            if node._right:
+                _walk(node._right)
 
         _walk(self.root)
 
@@ -109,12 +147,36 @@ class BinaryTree:
             if node is None:
                 return
 
-            if node.left:
-                _walk(node.left)
+            if node._left:
+                _walk(node._left)
 
-            if node.right:
-                _walk(node.right)
+            if node._right:
+                _walk(node._right)
 
             callable(node)
 
         _walk(self.root)
+
+    def collect_vals(self, type='in'):
+        """
+        Calls the specified traversal method,
+        collects each val into a list and returns the list.
+        """
+        vals = []
+
+        def _report(node):
+            vals.append(node.val)
+
+        if type == 'pr':
+            self.__postorder__(_report)
+
+        elif type == 'in':
+            self.__inorder__(_report)
+
+        elif type == 'po':
+            self.__postorder__(_report)
+
+        else:
+            return TypeError
+
+        return vals

@@ -46,24 +46,24 @@ class BinaryTree:
         for e in iterable:
             self.insert(val=e[0], data=e[1])
 
-    # def __str__(self):
-    #     """
-    #     return self information
-    #     """
-    #     return f'Root: {self.root} | Count: {self.count}'
+    def __str__(self):
+        """
+        return self information
+        """
+        return f'Root: {self.root} | Count: {self.count}'
 
-    # def __repr__(self):
-    #     """
-    #     return self information
-    #     """
-    #     return f'<Linked List | Root: {self.root} | Count: {self.count}>'
+    def __repr__(self):
+        """
+        return self information
+        """
+        return f'<Linked List | Root: {self.root} | Count: {self.count}>'
 
-    def insert(self, val=None, data=None, iterable=[]):
+    def insert(self, val=None, data=None):
         """
         Creates a root of absent.
         Else, traverses by vals to append data.
         """
-        
+
         if self.root is None:
             self.root = Node(val, data)
             self.count += 1
@@ -168,7 +168,7 @@ class BinaryTree:
             vals.append(node.val)
 
         if type == 'pr':
-            self.__postorder__(_report)
+            self.__preorder__(_report)
 
         elif type == 'in':
             self.__inorder__(_report)

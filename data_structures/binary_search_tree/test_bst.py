@@ -23,6 +23,12 @@ def tri_tree():
 
 
 @pytest.fixture
+def five_tree():
+    five_tree = BinaryTree([(3, 'a'), (1, 'b'), (5, 'c'), (2, 'c'), (.5, 'c')])
+    return five_tree
+
+
+@pytest.fixture
 def com_tree():
     com_tree = BinaryTree([[3, 'a'], (.1, (
         'eggs', 'spam')), (500000, {50: 50})])
@@ -52,18 +58,14 @@ def test_insert_root(empty_bt):
     empty_bt.insert(315, 'Bloggity-blog-blogy-blog')
     assert empty_bt.count == 1
 
-# def test_insert_single(empty_bt):
-#     """insert a single node to an empty tree.
-#     """
-#     assert (empty_bt.insert(315, 'Bloggity-blog-blogy-blog').count) == 1
-#     assert (empty_bt.insert([(314, 'Are you suggesting coconuts migrate?')]).count) == 2
 
-
-# def test_insert_iterable(empty_bt):
-#     """insert iterable to an empty tree.
-#     """
-#     assert (empty_bt.insert([(3, 'kermit'), [
-#         1, 'the'], (5, 'frog')]).count) == 3
+def test_insert_single(empty_bt):
+    """insert a single node to an empty tree.
+    """
+    empty_bt.insert(315, 'Bloggity-blog-blogy-blog')
+    assert empty_bt.count == 1
+    empty_bt.insert(777, 'Bloggity-blog-blogy-blog')
+    assert empty_bt.count == 2
 
 
 def test_node_val(root_tree):
@@ -147,22 +149,22 @@ def test_complex_R_child_data(com_tree):
 # TRAVERSAL
 
 
-def test_preorder_traversal(tri_tree):
+def test_preorder_traversal(five_tree):
     """ordered retrieval of nodes by val
     """
-    values = tri_tree.collect_vals('pr')
-    assert values == [1, 5, 3]
+    values = five_tree.collect_vals('pr')
+    assert values == [3, 1, 0.5, 2, 5]
 
 
-def test_inorder_traversal(tri_tree):
+def test_inorder_traversal(five_tree):
     """ordered retrieval of nodes by val
     """
-    values = tri_tree.collect_vals('in')
-    assert values == [1, 3, 5]
+    values = five_tree.collect_vals('in')
+    assert values == [0.5, 1, 2, 3, 5]
 
 
-def test_postorder_traversal(tri_tree):
+def test_postorder_traversal(five_tree):
     """ordered retrieval of nodes by val
     """
-    values = tri_tree.collect_vals('po')
-    assert values == [1, 5, 3]
+    values = five_tree.collect_vals('po')
+    assert values == [0.5, 2, 1, 5, 3]

@@ -103,7 +103,7 @@ Define a method called enqueue which takes any value as an argument and adds tha
 Define a method called dequeue which takes no arguments and removes / returns the Node at the front of the queue
 
 ---
-//////////////////////////////
+
 <a id="binary_search_tree"></a>
 ### 1. binary_search_tree <br>
 
@@ -118,9 +118,20 @@ Instantiation of a tree:
 acorn = BinaryTree()
 ```
 Nodes are instantiated in val:data pairs.
-Instantiation of a tree with a list of iterables:
+Instantiation of a tree can be done with a list of iterables:
 ```python
-shrub = BinaryTree([(3, 'a'), (1, 'b'), (5, 'c')])
+oak = BinaryTree([(3, 'a'), (1, 'b'), (5, 'c')])
+```
+Or with a single, which is an iterable of one:
+```python
+sapling = BinaryTree([(8888, 'port')])
+```
+Additional inserts take one node at a time,
+and are placed with binary logic by the integer val:
+```python
+def insert(self, val=None, data=None)
+
+sapling.insert(315, 'new leaf')
 ```
 
 ---

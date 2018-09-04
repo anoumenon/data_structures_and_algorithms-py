@@ -14,6 +14,7 @@ person = 'Jason Burns'
 1. [single_linked_list](#single_linked_list)
 2. [stack](#stack)
 3. [queue](#queue)
+4. [binary_search_tree](#binary_search_tree)
 
 ##### Algorithms <br>
 
@@ -102,7 +103,27 @@ Define a method called enqueue which takes any value as an argument and adds tha
 Define a method called dequeue which takes no arguments and removes / returns the Node at the front of the queue
 
 ---
+//////////////////////////////
+<a id="binary_search_tree"></a>
+### 1. binary_search_tree <br>
 
+Brinary search tree.<br>
+
+[link: code](https://github.com/jasonb315/data_structures_and_algorithms/tree/master/data_structures/binary_search_tree)<br>
+
+This section is a binary search tree.
+It organizes nodes in a binary structure from the root out.
+Instantiation of a tree:
+```python
+acorn = BinaryTree()
+```
+Nodes are instantiated in val:data pairs.
+Instantiation of a tree with a list of iterables:
+```python
+shrub = BinaryTree([(3, 'a'), (1, 'b'), (5, 'c')])
+```
+
+---
 
 ## ALGORITHIMS
 

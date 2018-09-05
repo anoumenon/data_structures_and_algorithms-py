@@ -1,4 +1,4 @@
-from .tqueue import Queue
+# from .tqueue import Queue
 
 
 class Node(object):
@@ -189,20 +189,9 @@ class BinaryTree:
         Reaverses in breadth using a queue,
         prints and returns list of values.
         """
-        que = Queue()
-        if self.root:
-            que.enqueue(self.root)
-        else:
-            raise IndexError
-        vals = []
+        queue = []
 
-        while que._front is not None:
-            if que._front._data._left:
-                que.enqueue(que._front._data._left)
-            if que._front._data._right:
-                que.enqueue(que._front._data._right)
-            vals.append(que._front._data.val)
-            que.dequeue
-
-        print(vals)
-        return vals
+        def stack_o_rama(node):
+            # FIFO:
+            # push on | shift off
+            queue.push(node.val)

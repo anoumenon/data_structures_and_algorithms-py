@@ -1,5 +1,4 @@
 from .bst import BinaryTree
-from .tqueue import Queue
 import pytest
 
 
@@ -169,10 +168,3 @@ def test_postorder_traversal(five_tree):
     """
     values = five_tree.ordered_vals('po')
     assert values == [0.5, 2, 1, 5, 3]
-
-
-# BREADTH TRAVERSAL
-
-
-def test_breadth_first_traversal_exists(tri_tree):
-    assert Queue

@@ -93,7 +93,7 @@ class BinaryTree:
                     return _search_place(node._right, node)
             # DUPLICATE
             elif val == node.val:
-                return False
+                raise ValueError
             # EDGE
             else:
                 return False
@@ -177,6 +177,6 @@ class BinaryTree:
             self.__postorder__(_report)
 
         else:
-            return TypeError
+            raise ValueError
 
         return vals

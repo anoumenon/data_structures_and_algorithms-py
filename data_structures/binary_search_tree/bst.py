@@ -1,3 +1,6 @@
+from .tqueue import Queue
+
+
 class Node(object):
     """
     BST node.
@@ -157,7 +160,7 @@ class BinaryTree:
 
         _walk(self.root)
 
-    def collect_vals(self, type='in'):
+    def ordered_vals(self, type='in'):
         """
         Calls the specified traversal method,
         collects each val into a list and returns the list.
@@ -179,4 +182,27 @@ class BinaryTree:
         else:
             raise ValueError
 
+        return vals
+
+    def breadth_first_traversal(self):
+        """
+        Reaverses in breadth using a queue,
+        prints and returns list of values.
+        """
+        que = Queue()
+        if self.root:
+            que.enqueue(self.root)
+        else:
+            raise IndexError
+        vals = []
+
+        while que._front is not None:
+            if que._front._data._left:
+                que.enqueue(que._front._data._left)
+            if que._front._data._right:
+                que.enqueue(que._front._data._right)
+            vals.append(que._front._data.val)
+            que.dequeue
+
+        print(vals)
         return vals

@@ -41,7 +41,21 @@ def test_insertion_increases_length(empty_queue):
     assert len(empty_queue) == 1
 
 
+def test_dequeue_decreases_length(small_queue):
+    """Check for length attribute decrease on dequeue
+    """
+    assert len(small_queue) == 4
+    small_queue.dequeue()
+    assert len(small_queue) == 3
+
+
 def test_default_value_of_front(empty_queue):
     """Test empty front is None
     """
     assert empty_queue.front is None
+
+
+def test_peek(small_queue):
+    """Test empty front is None
+    """
+    assert small_queue.front.val == 1

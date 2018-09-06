@@ -14,7 +14,8 @@ person = 'Jason Burns'
 1. [single_linked_list](#single_linked_list)
 2. [stack](#stack)
 3. [queue](#queue)
-4. [binary_search_tree](#binary_search_tree)
+4. [binary_tree](#binary_tree)
+5. [binary_search_tree](#binary_search_tree)
 
 ##### Algorithms <br>
 
@@ -86,7 +87,7 @@ Define a method called peek which takes no arguments and returns the Node at the
 
 
 <a id="queue"></a>
-### 1. queue <br>
+### 3. queue <br>
 
 Double linked list class for use as a queue.<br>
 
@@ -104,12 +105,37 @@ Define a method called dequeue which takes no arguments and removes / returns th
 
 ---
 
+<a id="binary_tree"></a>
+### 4. binary_tree <br>
+
+Nodes with up to two children each stemming from a root.<br>
+
+[link: code](https://github.com/jasonb315/data_structures_and_algorithms/tree/master/data_structures/binary_tree)<br>
+
+Insert a node of the value given above a node with a target val.
+Parent maintains branch side.
+```python
+def insert_above(self, val, target):
+```
+Insert a node of a val below to the L or R of a node with a target val
+Children maintain branch side.
+```python
+def insert_below(self, val, target, side='L'):
+```
+![insert_before_after](https://github.com/jasonb315/data_structures_and_algorithms/blob/master/assets/insert_before_after.jpg) <br>
+
+Search the tree for the maximm node value:
+![find_max_value](https://github.com/jasonb315/data_structures_and_algorithms/blob/master/assets/find_max_value.jpg) <br>
+
+
+---
+
 <a id="binary_search_tree"></a>
-### 1. binary_search_tree <br>
+### 5. binary_search_tree <br>
 
 Brinary search tree.<br>
 
-[link: code](https://github.com/jasonb315/data_structures_and_algorithms/tree/master/data_structures/binary_search_tree)<br>
+[link: code](https://github.com/jasonb315/data_structures_and_algorithms/tree/master/data_structures/binary_tree)<br>
 
 This section is a binary search tree.
 It organizes nodes in a binary structure from the root out.
@@ -133,6 +159,9 @@ def insert(self, val=None, data=None)
 
 sapling.insert(315, 'new leaf')
 ```
+
+Breadth first traversal:
+![breadth_first_traversal](https://github.com/jasonb315/data_structures_and_algorithms/blob/master/assets/breadth_first_traversal.jpg) <br>
 
 ---
 
@@ -269,7 +298,7 @@ Curly Brackets : {}
 
 <!--
 <a id="NAME"></a>
-### X. NAME <br>    
+### X. NAME <br>
 
 >des of problem
 

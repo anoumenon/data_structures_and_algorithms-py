@@ -7,4 +7,4 @@ class Node:
         return f'{self.val}'
 
     def __repr__(self):
-        return f'<Node | Val: {self.val} | Next: {self._next}>'
+        return f'<Node | Val: {self.value} | Next: {self._next}>'

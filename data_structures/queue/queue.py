@@ -1,5 +1,5 @@
 from node import Node
-from typing import Any
+# from typing import Any
 
 
 class Queue:
@@ -10,7 +10,7 @@ class Queue:
 
     def __repr__(self):
         return(
-            f'<Linked List | Front: {self.front} |'
+            f'<Queue | Front: {self.front} |'
             ' Back: {self.back} | Length: {self._length}>')
 
     def __str__(self):
@@ -22,7 +22,7 @@ class Queue:
 
         while current_node:
             current_node = current_node._next
-            output += f' -> (Next: {current_node})'
+            output += f'> (Next: {current_node})'
 
         return output + ''
 
@@ -32,24 +32,24 @@ class Queue:
         """
         return self._length
 
-    def enqueue(self, value):
+    def enqueue(self, val):
         """
-        Accepts a value of any type and creates a new Node in the Queue.
-        Args: value (object): Any
+        Accepts a val of any type and creates a new Node in the Queue.
+        Args: val (object): Any
         Return: Node
         """
         if not self.front:
-            self.front = Node(value)
+            self.front = Node(val)
 
         else:
-            newNode = Node(value)
+            newNode = Node(val)
             current = self.front
 
             while current._next:
                 current = current._next
             current._next = newNode
 
-            self.back = Node(value)
+            self.back = Node(val)
 
         self._length += 1
 
@@ -57,17 +57,17 @@ class Queue:
 
     def dequeue(self):
         """
-        Removes and returns the first value in the queue
+        Removes and returns the first val in the queue
         """
         temp = self.front
         self.front = temp._next
         temp._next = None
 
         self._length -= 1
-        return temp.value
+        return temp.val
 
     def peek(self):
         """
         Show node at front of stack
         """
-        return self.front.value
+        return self.front.val

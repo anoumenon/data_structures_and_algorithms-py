@@ -146,25 +146,25 @@ def test_complex_R_child_data(com_tree):
     assert com_tree.root._right.data == {50: 50}
 
 
-# TRAVERSAL
+# ORDERED TRAVERSAL
 
 
 def test_preorder_traversal(five_tree):
     """ordered retrieval of nodes by val
     """
-    values = five_tree.collect_vals('pr')
+    values = five_tree.ordered_vals('pr')
     assert values == [3, 1, 0.5, 2, 5]
 
 
 def test_inorder_traversal(five_tree):
     """ordered retrieval of nodes by val
     """
-    values = five_tree.collect_vals('in')
+    values = five_tree.ordered_vals('in')
     assert values == [0.5, 1, 2, 3, 5]
 
 
 def test_postorder_traversal(five_tree):
     """ordered retrieval of nodes by val
     """
-    values = five_tree.collect_vals('po')
+    values = five_tree.ordered_vals('po')
     assert values == [0.5, 2, 1, 5, 3]

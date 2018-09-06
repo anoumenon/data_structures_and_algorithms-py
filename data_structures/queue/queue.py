@@ -2,70 +2,72 @@ from node import Node
 from typing import Any
 
 
-class Queue(object):
-    '''
-    Singly linked list creation.
-    O(1) time.
-    '''
-    def __init__(self, iterable=[]):
-        '''
-        Initialized the list with a set of values, contained in an iterable.
-        O(n) time.
-        '''
-        self._front = None
-        self._back = None
+class Queue:
+    def __init__(self):
+        self.front = None
+        self.back = None
         self._length = 0
-
-        if len(iterable) >= 1:
-            for e in iterable:
-                self.enqueue(e)
-
-    def __str__(self):
-        return(
-             f'Front: {self._front} | '
-             'Back: {self._back} | Length: {self._length}')
 
     def __repr__(self):
         return(
-            f'<Linked List | Front: {self._front} |'
-            ' Back: {self._back} | Length: {self._length}>')
+            f'<Linked List | Front: {self.front} |'
+            ' Back: {self.back} | Length: {self._length}>')
+
+    def __str__(self):
+        """
+        Returns a nicely formatted display of Queue
+        """
+        current_node = self.front
+        output = f'(Head: {self.front})'
+
+        while current_node:
+            current_node = current_node._next
+            output += f' -> (Next: {current_node})'
+
+        return output + ''
 
     def __len__(self):
         """
-        Returns the length of the queue.
+        Return length of Queue
         """
-        curr = self._front
-        len = 0
-        while curr:
-            curr = curr._prev
-            len += 1
-        return len
+        return self._length
 
-    def enqueue(self, data: Any) -> Node:
+    def enqueue(self, value):
         """
-        Adds a node to the back of the queue
+        Accepts a value of any type and creates a new Node in the Queue.
+        Args: value (object): Any
+        Return: Node
         """
-        if self._back:
-            new_node = Node(data, _next=self._back)
-            self._back._prev = new_node
-            self._back = new_node
+        if not self.front:
+            self.front = Node(value)
+
         else:
-            new_node = Node(data)
-            self._back = new_node
-            self._front = new_node
+            newNode = Node(value)
+            current = self.front
+
+            while current._next:
+                current = current._next
+            current._next = newNode
+
+            self.back = Node(value)
+
         self._length += 1
+
+        return self.front
 
     def dequeue(self):
         """
-        Removes from the front of the queue and returns
+        Removes and returns the first value in the queue
         """
-        if self._front:
-            return_node = self._front
-            if self._front._prev:
-                self._front = self._front._prev
-                return_node._prev = None
-                self._front._next = None
-            else:
-                self._front = None
+        temp = self.front
+        self.front = temp._next
+        temp._next = None
+
         self._length -= 1
-        return return_node
+        return temp.value
+
+    def peek(self):
+        """
+        Show node at front of stack
+        """
+        return self.front.value

@@ -1,4 +1,86 @@
-from a_queue import Queue
+class Cat(object):
+    '''
+    Node in a stack.
+    '''
+
+    def __init__(self, tag, _next=None):
+        self.tag = tag
+        self._next = _next
+
+    def __data__(self):
+        return f'{self}'
+
+    def __repr__(self):
+        return(
+            f'<Cat | tag: {self.tag} | Next: {self._next}>'
+            )
+
+
+class Dog(object):
+    '''
+    Node in a stack.
+    '''
+
+    def __init__(self, tag, _next=None):
+        self.tag = tag
+        self._next = _next
+
+    def __data__(self):
+        return f'{self}'
+
+    def __repr__(self):
+        return(
+            f'<Dog | tag: {self.tag} | Next: {self._next}>'
+            )
+
+
+class Queue(object):
+    '''
+    Singly linked list class as queue.
+    '''
+    def __init__(self):
+        '''
+        Instantiation
+        O(1) time.
+        '''
+        self._front = None
+        self._back = None
+        self.length = 0
+
+    def __str__(self):
+        return(
+             f'Front: {self._front}'
+             )
+
+    def __repr__(self):
+        return(
+            f'<Queue | Front: {self._front}')
+
+    def enq(self, animal):
+        """
+        String
+        """
+        if self._front is None:
+            self._front = animal
+            self._back = animal
+        else:
+            self._back._next = animal
+            self._back = animal
+
+    def deq(self):
+        """
+        String
+        """
+        if self._front:
+            adopt = self._front
+            if self._front._next:
+                self._front = self._front._next
+            else:
+                self._front = None
+            adopt._next = None
+            return adopt
+        else:
+            return False
 
 
 class Shelter(object):
@@ -23,26 +105,47 @@ class Shelter(object):
         )
 
     def __len__(self):
-        return self.length
+        return self.count
 
     def enqueue(self, animal):
-
-        if animal == 'cat' or 'dog':
-            self.animal.enqueue(animal, self.tags)
+        if animal is 'dog':
+            pupper = Dog(self.tags)
             self.tags += 1
             self.count += 1
-        else:
-            print('cat or dog only')
-            return False
+            self.dogs.enq(pupper)
 
-    def dequeue(self, pref):
-        if pref == 'cat' or 'dog':
-            self.pref.dequeue()
-        else:
-            cat_head = self.cats._front.tag
-            dog_head = self.dogs._front.tag
-            if cat_head > dog_head:
-                self.cats.dequeue()
+        if animal is 'cat':
+            kitty = Cat(self.tags)
+            self.tags += 1
+            self.count += 1
+            self.cats.enq(kitty)
+        elif animal:
+            pass
+
+    def dequeue(self, animal):
+        if animal is 'dog' and self.dogs._front:
+            self.count -= 1
+            self.dogs.deq()
+
+        if animal is 'cat' and self.cats._front:
+            self.count -= 1
+            self.cats.deq()
+
+        elif animal and (self.dogs._front or self.cats._front):
+            if self.dogs._front and self.cats._front:
+                if self.dogs._front.tag < self.cats._front.tag:
+                    self.dogs.deq()
+                    return
+                else:
+                    self.cats.deq()
+                    return
+            elif self.dogs._front:
+                self.dogs.deq()
+                return
+            elif self.cats._front:
+                self.cats.deq()
+                return
             else:
-                self.dogs.dequeue()
-        self.count -= 1
+                pass
+        else:
+            return False

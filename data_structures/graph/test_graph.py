@@ -77,3 +77,13 @@ def test_get_neighbors(graph_empty):
     graph_empty.add_edge('A', 'C', 1)
     graph_empty.add_edge('A', 'D', 5)
     assert graph_empty.get_neighbors('A') == {'B': 3, 'C': 1, 'D': 5}
+
+
+def test_len_count(graph_empty):
+    assert graph_empty.__len__() == 0
+    graph_empty.add_vert('X')
+    assert graph_empty.__len__() == 1
+    graph_empty.add_vert('Y')
+    assert graph_empty.__len__() == 2
+    graph_empty.add_vert('Z')
+    assert graph_empty.__len__() == 3

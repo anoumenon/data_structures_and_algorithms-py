@@ -16,6 +16,7 @@ person = 'Jason Burns'
 3. [queue](#queue)
 4. [binary_tree](#binary_tree)
 5. [binary_search_tree](#binary_search_tree)
+6. [graph](#graph)
 
 ##### Algorithms <br>
 
@@ -162,6 +163,22 @@ sapling.insert(315, 'new leaf')
 
 Breadth first traversal:
 ![breadth_first_traversal](https://github.com/jasonb315/data_structures_and_algorithms/blob/master/assets/breadth_first_traversal.jpg) <br>
+
+---
+
+<a id="graph"></a>
+### 6. graph <br>
+
+Double linked list class for use as a queue.<br>
+
+[link: code](https://github.com/jasonb315/data_structures_and_algorithms/tree/master/data_structures/graph)<br>
+
+In graph.py:
+Create a Class for a Graph which creates an empty Graph when instantiated
+Define any further magic methods such as len and str to support user functionality and informative responses
+Define methods to add, create, count, and connect node in the graph
+
+![title](https://github.com/jasonb315/data_structures_and_algorithms/blob/master/assets/graph.jpg) <br>
 
 ---
 

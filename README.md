@@ -14,7 +14,9 @@ person = 'Jason Burns'
 1. [single_linked_list](#single_linked_list)
 2. [stack](#stack)
 3. [queue](#queue)
-4. [graph](#graph)
+4. [binary_tree](#binary_tree)
+5. [binary_search_tree](#binary_search_tree)
+6. [graph](#graph)
 
 ##### Algorithms <br>
 
@@ -26,6 +28,7 @@ person = 'Jason Burns'
 6. [merge_lists](#merge_lists)
 7. [queue_with_stacks](#queue_with_stacks)
 8. [fifo_animal_shelter](#fifo_animal_shelter)
+9. [multi_bracket_validation](#multi_bracket_validation)
 
 
 
@@ -103,9 +106,68 @@ Define a method called dequeue which takes no arguments and removes / returns th
 
 ---
 
+<a id="binary_tree"></a>
+### 4. binary_tree <br>
+
+Nodes with up to two children each stemming from a root.<br>
+
+[link: code](https://github.com/jasonb315/data_structures_and_algorithms/tree/master/data_structures/binary_tree)<br>
+
+Insert a node of the value given above a node with a target val.
+Parent maintains branch side.
+```python
+def insert_above(self, val, target):
+```
+Insert a node of a val below to the L or R of a node with a target val
+Children maintain branch side.
+```python
+def insert_below(self, val, target, side='L'):
+```
+![insert_before_after](https://github.com/jasonb315/data_structures_and_algorithms/blob/master/assets/insert_before_after.jpg) <br>
+
+Search the tree for the maximm node value:
+![find_max_value](https://github.com/jasonb315/data_structures_and_algorithms/blob/master/assets/find_max_value.jpg) <br>
+
+
+---
+
+<a id="binary_search_tree"></a>
+### 5. binary_search_tree <br>
+
+Brinary search tree.<br>
+
+[link: code](https://github.com/jasonb315/data_structures_and_algorithms/tree/master/data_structures/binary_tree)<br>
+
+This section is a binary search tree.
+It organizes nodes in a binary structure from the root out.
+Instantiation of a tree:
+```python
+acorn = BinaryTree()
+```
+Nodes are instantiated in val:data pairs.
+Instantiation of a tree can be done with a list of iterables:
+```python
+oak = BinaryTree([(3, 'a'), (1, 'b'), (5, 'c')])
+```
+Or with a single, which is an iterable of one:
+```python
+sapling = BinaryTree([(8888, 'port')])
+```
+Additional inserts take one node at a time,
+and are placed with binary logic by the integer val:
+```python
+def insert(self, val=None, data=None)
+
+sapling.insert(315, 'new leaf')
+```
+
+Breadth first traversal:
+![breadth_first_traversal](https://github.com/jasonb315/data_structures_and_algorithms/blob/master/assets/breadth_first_traversal.jpg) <br>
+
+---
 
 <a id="graph"></a>
-### 4. graph <br>
+### 6. graph <br>
 
 Double linked list class for use as a queue.<br>
 
@@ -233,6 +295,24 @@ dequeue(pref): returns either a dog or a cat. If pref, a string, is ‘cat’ re
 [:top: Contents](#contents)
 
 ---
+
+<a id="multi_bracket_validation"></a>
+### 9. multi_bracket_validation <br>
+
+Your function should take a string as its only argument, and should return a boolean representing whether or not the brackets in the string are balanced. There are 3 types of brackets:
+
+Round Brackets : ()
+Square Brackets : []
+Curly Brackets : {}
+
+[link: coded solution](https://github.com/jasonb315/data_structures_and_algorithms/tree/master/challenges/multi_bracket_validation)
+
+![title](https://github.com/jasonb315/data_structures_and_algorithms/blob/master/assets/multi_bracket_validation.jpg) <br>
+
+[:top: Contents](#contents)
+
+---
+
 <!--
 <a id="NAME"></a>
 ### X. NAME <br>

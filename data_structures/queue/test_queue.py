@@ -4,41 +4,58 @@ import pytest
 
 @pytest.fixture
 def empty_queue():
+    """Reusable testing fixture of an empty queue
+    """
     return Queue()
 
 
 @pytest.fixture
-def tripple_queue():
-    return Queue([1, 2, 3])
+def small_queue():
+    """Reusable testing fixture for short queue
+    """
+    queue = Queue()
+    queue.enqueue(1)
+    queue.enqueue(2)
+    queue.enqueue(3)
+    queue.enqueue(4)
+    return queue
 
 
-def test_queue_exists():
+def test_queue_class_exists():
+    """Test import
     """
-    Check queue import
-    """
-    assert empty_queue
+    assert Queue
 
 
-def test_queue_enqueues_iterable(tripple_queue):
+def test_queue_instantiation(empty_queue):
+    """Test instantiation
     """
-    assert that the queue can be instantiated with multiple nodes
-    """
-    assert len(tripple_queue) == 3
+    assert isinstance(empty_queue, Queue)
 
 
-def test_queue_enqueues_single(tripple_queue):
+def test_insertion_increases_length(empty_queue):
+    """Check for length attribute increase on appendage
     """
-    assert that the queue will enqueue a single node
-    """
-    assert len(tripple_queue) == 3
-    tripple_queue.enqueue('a')
-    assert len(tripple_queue) == 4
+    assert len(empty_queue) == 0
+    empty_queue.enqueue(315)
+    assert len(empty_queue) == 1
 
 
-def test_queue_dequeues_single(tripple_queue):
+def test_dequeue_decreases_length(small_queue):
+    """Check for length attribute decrease on dequeue
     """
-    assert that the queue will dequeue a node
+    assert len(small_queue) == 4
+    small_queue.dequeue()
+    assert len(small_queue) == 3
+
+
+def test_default_value_of_front(empty_queue):
+    """Test empty front is None
     """
-    assert len(tripple_queue) == 3
-    tripple_queue.dequeue()
-    assert len(tripple_queue) == 2
+    assert empty_queue.front is None
+
+
+def test_peek(small_queue):
+    """Test empty front is None
+    """
+    assert small_queue.front.val == 1

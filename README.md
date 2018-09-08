@@ -14,6 +14,7 @@ person = 'Jason Burns'
 1. [single_linked_list](#single_linked_list)
 2. [stack](#stack)
 3. [queue](#queue)
+4. [graph](#graph)
 
 ##### Algorithms <br>
 
@@ -84,7 +85,7 @@ Define a method called peek which takes no arguments and returns the Node at the
 
 
 <a id="queue"></a>
-### 1. queue <br>
+### 3. queue <br>
 
 Double linked list class for use as a queue.<br>
 
@@ -102,6 +103,22 @@ Define a method called dequeue which takes no arguments and removes / returns th
 
 ---
 
+
+<a id="graph"></a>
+### 4. graph <br>
+
+Double linked list class for use as a queue.<br>
+
+[link: code](https://github.com/jasonb315/data_structures_and_algorithms/tree/master/data_structures/graph)<br>
+
+In graph.py:
+Create a Class for a Graph which creates an empty Graph when instantiated
+Define any further magic methods such as len and str to support user functionality and informative responses
+Define methods to add, create, count, and connect node in the graph
+
+![title](https://github.com/jasonb315/data_structures_and_algorithms/blob/master/assets/graph.jpg) <br>
+
+---
 
 ## ALGORITHIMS
 

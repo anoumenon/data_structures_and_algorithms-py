@@ -84,6 +84,8 @@ Define a method called push which takes any value as an argument and adds that v
 Define a method called pop which takes no arguments and removes / returns the Node at the top of the stack
 Define a method called peek which takes no arguments and returns the Node at the top of the stack
 
+[:top: Contents](#contents)
+
 ---
 
 
@@ -103,6 +105,8 @@ This class should have the ability to accept an iterable as an argument when ins
 Define any further magic methods such as len and str to support user functionality and informative responses
 Define a method called enqueue which takes any value as an argument and adds that value to the back of the queue with an O(1) Time performance
 Define a method called dequeue which takes no arguments and removes / returns the Node at the front of the queue
+
+[:top: Contents](#contents)
 
 ---
 
@@ -128,6 +132,7 @@ def insert_below(self, val, target, side='L'):
 Search the tree for the maximm node value:
 ![find_max_value](https://github.com/jasonb315/data_structures_and_algorithms/blob/master/assets/find_max_value.jpg) <br>
 
+[:top: Contents](#contents)
 
 ---
 
@@ -164,6 +169,8 @@ sapling.insert(315, 'new leaf')
 Breadth first traversal:
 ![breadth_first_traversal](https://github.com/jasonb315/data_structures_and_algorithms/blob/master/assets/breadth_first_traversal.jpg) <br>
 
+[:top: Contents](#contents)
+
 ---
 
 <a id="graph"></a>
@@ -179,6 +186,8 @@ Define any further magic methods such as len and str to support user functionali
 Define methods to add, create, count, and connect node in the graph
 
 ![title](https://github.com/jasonb315/data_structures_and_algorithms/blob/master/assets/graph.jpg) <br>
+
+[:top: Contents](#contents)
 
 ---
 

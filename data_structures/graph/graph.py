@@ -64,3 +64,19 @@ class Graph:
         OUT: edges of selected vert
         """
         return self.graph[val]
+
+    def breadth_first(self, vert):
+        que = []
+        out = []
+        visited = []
+        que.append(vert)
+
+        while que:
+            s = que.pop(0)
+            out.append(s)
+
+            for i in self.graph[s]:
+                if i not in visited:
+                    que.append[i]
+                    visited.append[i]
+        return out

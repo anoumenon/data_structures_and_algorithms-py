@@ -87,3 +87,47 @@ def test_len_count(graph_empty):
     assert graph_empty.__len__() == 2
     graph_empty.add_vert('Z')
     assert graph_empty.__len__() == 3
+
+
+@pytest.fixture()
+def flight_graph():
+    """Set up a graph for traversal.
+    """
+    g = Graph()
+    g.graph = {
+        'Pandora': {'Arendelle': 150,},
+        'Arendelle': {'Pandora': 150, 'Metroville': 82, 'Monstropolis': 105},
+        'Metroville': {'Narnia': 37, 'Arendelle': 82, 'Monstropolis': 105, 'Naboo': 26},
+        'Monstropolis': {'Arendelle': 42, 'Metroville': 105, 'Naboo': 73},
+        'Naboo': {'Monstropolis': 73, 'Metroville': 26, 'Narnia': 250},
+        'Narnia': {'Metroville': 37, 'Naboo': 250},
+        'Single': {}
+    }
+    return g
+
+
+def test_get_edges(flight_graph):
+    """get edges method operational
+    """
+    assert flight_graph.get_edges(['Pandora', 'Arendelle', 'Pandora'])
+
+
+def test_get_edge_val_round_trip(flight_graph):
+    """gathers value total of round trip
+    """
+    assert flight_graph.get_edges([
+        'Pandora', 'Arendelle', 'Pandora']) == [True, 300]
+
+
+def test_get_edge_val(flight_graph):
+    """gather value of trip
+    """
+    assert flight_graph.get_edges([
+        'Pandora', 'Arendelle', 'Metroville']) == [True, 232]
+
+
+def test_absent_path(flight_graph):
+    """attempts absent path, returns false and 0
+    """
+    assert flight_graph.get_edges([
+        'Arendelle', 'Monstropolis', 'Wonderland']) == [False, 0]

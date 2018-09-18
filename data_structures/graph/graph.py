@@ -64,3 +64,34 @@ class Graph:
         OUT: edges of selected vert
         """
         return self.graph[val]
+
+    def breadth_first(self, vert):
+        que = []
+        out = []
+        visited = []
+        que.append(vert)
+
+        while que:
+            s = que.pop(0)
+            out.append(s)
+
+            for i in self.graph[s]:
+                if i not in visited:
+                    que.append[i]
+                    visited.append[i]
+        return out
+
+    def get_edges(self, vert_list):
+        """
+        IN: List of vertices to check the path between
+        OUT: Bool for possible path between all vert edges,
+        accumulated weight of all edges if true.
+        """
+        accumulator = 0
+
+        for i in range(1, len(vert_list)):
+            if vert_list[i] in self.get_neighbors(vert_list[i-1]):
+                accumulator += self.graph[vert_list[i-1]][vert_list[i]]
+            else:
+                return [False, 0]
+        return [True, accumulator]

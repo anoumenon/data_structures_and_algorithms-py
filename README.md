@@ -183,6 +183,7 @@ Checking for a vertex
 Adding an edge between verts
 Aquiring the neighbors of a vertex
 Breadth first traversal
+Path (sequential edges) check
 
 [link: code](https://github.com/jasonb315/data_structures_and_algorithms/tree/master/data_structures/graph)<br>
 
@@ -194,6 +195,9 @@ Define methods to add, create, count, and connect node in the graph
 ![title](https://github.com/jasonb315/data_structures_and_algorithms/blob/master/assets/graph.jpg) <br>
 
 ![title](https://github.com/jasonb315/data_structures_and_algorithms/blob/master/assets/graph_breadth_first.jpg) <br>
+
+![title](https://github.com/jasonb315/data_structures_and_algorithms/blob/master/assets/get_edges.jpg) <br>
+
 
 [:top: Contents](#contents)
 

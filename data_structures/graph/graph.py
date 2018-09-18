@@ -80,3 +80,18 @@ class Graph:
                     que.append[i]
                     visited.append[i]
         return out
+
+    def get_edges(self, vert_list):
+        """
+        IN: List of vertices to check the path between
+        OUT: Bool for possible path between all vert edges,
+        accumulated weight of all edges if true.
+        """
+        accumulator = 0
+
+        for i in range(1, len(vert_list)):
+            if vert_list[i] in self.get_neighbors(vert_list[i-1]):
+                accumulator += self.graph[vert_list[i-1]][vert_list[i]]
+            else:
+                return [False, 0]
+        return [True, accumulator]

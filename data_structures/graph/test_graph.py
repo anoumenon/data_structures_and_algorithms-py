@@ -37,6 +37,24 @@ def graph_filled_for_traversal():
     return g
 
 
+@pytest.fixture()
+def bi_directional():
+    """Set up a graph for traversal.
+    """
+    g = Graph()
+    g.graph = {
+        'A': {'B': 10, 'D': 10},
+        'B': {'A': 10, 'C': 10, 'D': 10},
+        'C': {'B': 10, 'G': 10},
+        'D': {'A': 10, 'B': 10, 'E': 10, 'H': 10, 'F': 10},
+        'E': {'D': 10},
+        'F': {'D': 10, 'H': 10},
+        'G': {'C': 10},
+        'H': {'D': 10, 'F': 10},
+    }
+    return g
+
+
 def test_empty_graph_instance():
     assert graph_empty
 
@@ -131,3 +149,40 @@ def test_absent_path(flight_graph):
     """
     assert flight_graph.get_edges([
         'Arendelle', 'Monstropolis', 'Wonderland']) == [False, 0]
+
+
+def test_instance_is_graph(bi_directional):
+    """graph is graph.
+    """
+    assert isinstance(bi_directional, Graph)
+
+
+def test_depth_first_method_avalible(bi_directional):
+    """attempts absent path, returns false and 0
+    """
+    assert bi_directional.depth_first
+
+
+def test_depth_first_correct_traversal(bi_directional):
+    """given input, check correct ordered output
+    """
+    assert bi_directional.depth_first('A') == [
+        'A', 'B', 'C', 'G', 'D', 'E', 'H', 'F']
+
+
+def test_absent_vert(bi_directional):
+    """given a vert not included in the method, return false
+    """
+    assert bi_directional.depth_first(
+        "IT'S B A N A N A S") is False
+
+
+# removed for built in handling, kept for posterity.
+
+# def test_vertex_does_not_exist(bi_directional):
+#     """given a vert not included in the method
+#     """
+#     with pytest.raises(KeyError):
+#         assert bi_directional.depth_first('K')
+
+

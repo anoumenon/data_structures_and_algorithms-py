@@ -95,3 +95,21 @@ class Graph:
             else:
                 return [False, 0]
         return [True, accumulator]
+
+    def depth_first(self, start_vert):
+        """
+        IN: starting vert in graph to function as 'root'
+        OUT: preordered list of graph vertices
+        """
+        if start_vert not in self.graph:
+            return False
+
+        visited = []
+
+        def _walk(vert):
+            visited.append(vert)
+            for e in self.graph[vert]:
+                if e not in visited:
+                    _walk(e)
+        _walk(start_vert)
+        return visited

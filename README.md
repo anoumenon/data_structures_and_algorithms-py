@@ -194,9 +194,14 @@ Define methods to add, create, count, and connect node in the graph
 
 ![title](https://github.com/jasonb315/data_structures_and_algorithms/blob/master/assets/graph.jpg) <br>
 
+breadth first traversal:
 ![title](https://github.com/jasonb315/data_structures_and_algorithms/blob/master/assets/graph_breadth_first.jpg) <br>
-
+depth first traversal:
+![title](https://github.com/jasonb315/data_structures_and_algorithms/blob/master/assets/depth_first.jpg) <br>
+path weight accumulation:
 ![title](https://github.com/jasonb315/data_structures_and_algorithms/blob/master/assets/get_edges.jpg) <br>
+
+
 
 
 [:top: Contents](#contents)

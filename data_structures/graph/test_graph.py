@@ -184,5 +184,3 @@ def test_absent_vert(bi_directional):
 #     """
 #     with pytest.raises(KeyError):
 #         assert bi_directional.depth_first('K')
-
-

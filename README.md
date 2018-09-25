@@ -29,7 +29,7 @@ person = 'Jason Burns'
 7. [queue_with_stacks](#queue_with_stacks)
 8. [fifo_animal_shelter](#fifo_animal_shelter)
 9. [multi_bracket_validation](#multi_bracket_validation)
-
+10. [repeated_word](#repeated_word)
 
 
 ---
@@ -334,6 +334,18 @@ Curly Brackets : {}
 [link: coded solution](https://github.com/jasonb315/data_structures_and_algorithms/tree/master/challenges/multi_bracket_validation)
 
 ![title](https://github.com/jasonb315/data_structures_and_algorithms/blob/master/assets/multi_bracket_validation.jpg) <br>
+
+[:top: Contents](#contents)
+
+---
+
+<a id="repeated_word"></a>
+### 10. repeated_word <br>
+
+Write a function that accepts a lengthy string parameter.
+Without utilizing any of the built-in library methods available to your language, return the first word to occur more than once in that provided string.
+
+![title](https://github.com/jasonb315/data_structures_and_algorithms/blob/master/assets/repeated_word.jpg) <br>
 
 [:top: Contents](#contents)
 

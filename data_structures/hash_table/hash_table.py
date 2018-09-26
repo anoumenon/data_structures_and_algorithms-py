@@ -33,4 +33,3 @@ class HashTable:
         keys = []
         for k in self.buckets:
             keys.append(k)
-

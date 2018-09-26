@@ -15,4 +15,3 @@ def test_empty_table(empty_table):
 def test_hash_one(empty_table):
     empty_table.put('key', 'value')
     assert empty_table.buckets is None
-

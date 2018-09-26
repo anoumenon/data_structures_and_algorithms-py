@@ -203,9 +203,30 @@ path weight accumulation:
 ![title](https://github.com/jasonb315/data_structures_and_algorithms/blob/master/assets/get_edges.jpg) <br>
 
 
+[:top: Contents](#contents)
 
+---
+
+<a id="hash_table"></a>
+### 5. hash_table <br>
+
+Hash Table.<br>
+
+[link: coded solution](https://github.com/jasonb315/data_structures_and_algorithms/tree/master/data_structures/hash_table)<br>
+
+* `.put(key, value)` - store a value with the given key
+* `.get(key)` - get the value associated with the given key
+* `.update(key, value)` - modify the value associated with the given key
+* `.remove(key)` - delete a value associated with a key
+* `.keys()` - return a collection of all the keys
 
 [:top: Contents](#contents)
+
+Left join:
+
+![title](https://github.com/jasonb315/data_structures_and_algorithms/blob/master/assets/left_join.png) <br>
+![title](https://github.com/jasonb315/data_structures_and_algorithms/blob/master/assets/hash_join.jpg) <br>
+
 
 ---
 

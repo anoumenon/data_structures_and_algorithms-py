@@ -30,6 +30,7 @@ person = 'Jason Burns'
 8. [fifo_animal_shelter](#fifo_animal_shelter)
 9. [multi_bracket_validation](#multi_bracket_validation)
 10. [repeated_word](#repeated_word)
+11. [tree_intersection](#tree_intersection)
 
 
 ---
@@ -351,6 +352,24 @@ Without utilizing any of the built-in library methods available to your language
 
 ---
 
+<a id="tree_intersection"></a>
+### 10. tree_intersection <br>
+
+Write a function that accepts a lengthy string parameter.
+Without utilizing any of the built-in library methods available to your language, return the first word to occur more than once in that provided string.
+
+[link: coded solution](https://github.com/jasonb315/data_structures_and_algorithms/tree/master/challenges/tree_intersection)
+
+![title](https://github.com/jasonb315/data_structures_and_algorithms/blob/master/assets/tree_intersection.jpg) <br>
+
+[:top: Contents](#contents)
+
+---
+
+
+
+
+tree_intersection
 <!--
 <a id="NAME"></a>
 ### X. NAME <br>

@@ -18,6 +18,10 @@ person = 'Jason Burns'
 5. [binary_search_tree](#binary_search_tree)
 6. [graph](#graph)
 
+##### Sorts <br>
+
+1. [selection_sort](#selection_sort)
+
 ##### Algorithms <br>
 
 1. [reverse_arr](#reverse_arr)
@@ -227,8 +231,23 @@ Left join:
 ![title](https://github.com/jasonb315/data_structures_and_algorithms/blob/master/assets/left_join.png) <br>
 ![title](https://github.com/jasonb315/data_structures_and_algorithms/blob/master/assets/hash_join.jpg) <br>
 
+---
+
+## SORTS
+
+<a id="selection_sort"></a>
+### 1. selection_sort <br>
+
+Selection sort!
+
+[code](https://github.com/jasonb315/data_structures_and_algorithms/tree/master/sorting_algos/selection)
+
+![title](https://github.com/jasonb315/data_structures_and_algorithms/blob/master/assets/selection_sort.jpg) <br>
+
+[:top: Contents](#contents)
 
 ---
+
 
 ## ALGORITHIMS
 

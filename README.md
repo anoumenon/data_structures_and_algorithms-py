@@ -12,29 +12,30 @@ person = 'Jason Burns'
 ##### Data Structures <br>
 
 1. [single_linked_list](#single_linked_list)
-2. [stack](#stack)
-3. [queue](#queue)
-4. [binary_tree](#binary_tree)
-5. [binary_search_tree](#binary_search_tree)
-6. [graph](#graph)
+1. [stack](#stack)
+1. [queue](#queue)
+1. [binary_tree](#binary_tree)
+1. [binary_search_tree](#binary_search_tree)
+1. [graph](#graph)
 
 ##### Sorts <br>
 
 1. [selection_sort](#selection_sort)
+1. [merge_sort](#merge_sort)
 
 ##### Algorithms <br>
 
 1. [reverse_arr](#reverse_arr)
-2. [insert_shift_arr](#insert_shift_arr)
-3. [array_binary_search](#array_binary_search)
-4. [matrix_rotate](#matrix_rotate)
-5. [nth_fibonacci](#nth_fibonacci)
-6. [merge_lists](#merge_lists)
-7. [queue_with_stacks](#queue_with_stacks)
-8. [fifo_animal_shelter](#fifo_animal_shelter)
-9. [multi_bracket_validation](#multi_bracket_validation)
-10. [repeated_word](#repeated_word)
-11. [tree_intersection](#tree_intersection)
+1. [insert_shift_arr](#insert_shift_arr)
+1. [array_binary_search](#array_binary_search)
+1. [matrix_rotate](#matrix_rotate)
+1. [nth_fibonacci](#nth_fibonacci)
+1. [merge_lists](#merge_lists)
+1. [queue_with_stacks](#queue_with_stacks)
+1. [fifo_animal_shelter](#fifo_animal_shelter)
+1. [multi_bracket_validation](#multi_bracket_validation)
+1. [repeated_word](#repeated_word)
+1. [tree_intersection](#tree_intersection)
 
 
 ---
@@ -47,7 +48,7 @@ person = 'Jason Burns'
 
 Single direction linked list class.<br>
 
-[link: code](https://github.com/jasonb315/data_structures_and_algorithms/tree/master/data_structures/linked_lists)<br>
+[code](https://github.com/jasonb315/data_structures_and_algorithms/tree/master/data_structures/linked_lists)<br>
 
 Methods;<br>
 prepend: create and attach a node with a passed value to the head of the list.<br>
@@ -77,7 +78,7 @@ insert_after:
 
 Single direction linked list class for use as a stack.<br>
 
-[link: code](https://github.com/jasonb315/data_structures_and_algorithms/tree/master/data_structures/stack)<br>
+[code](https://github.com/jasonb315/data_structures_and_algorithms/tree/master/data_structures/stack)<br>
 
 In stack.py:
 Create a Class for a Stack which creates an empty Stack when instantiated
@@ -99,7 +100,7 @@ Define a method called peek which takes no arguments and returns the Node at the
 
 Double linked list class for use as a queue.<br>
 
-[link: code](https://github.com/jasonb315/data_structures_and_algorithms/tree/master/data_structures/queue)<br>
+[code](https://github.com/jasonb315/data_structures_and_algorithms/tree/master/data_structures/queue)<br>
 
 In queue.py:
 Create a Class for a Queue which creates an empty Queue when instantiated
@@ -120,7 +121,7 @@ Define a method called dequeue which takes no arguments and removes / returns th
 
 Nodes with up to two children each stemming from a root.<br>
 
-[link: code](https://github.com/jasonb315/data_structures_and_algorithms/tree/master/data_structures/binary_tree)<br>
+[code](https://github.com/jasonb315/data_structures_and_algorithms/tree/master/data_structures/binary_tree)<br>
 
 Insert a node of the value given above a node with a target val.
 Parent maintains branch side.
@@ -146,7 +147,7 @@ Search the tree for the maximm node value:
 
 Brinary search tree.<br>
 
-[link: code](https://github.com/jasonb315/data_structures_and_algorithms/tree/master/data_structures/binary_tree)<br>
+[code](https://github.com/jasonb315/data_structures_and_algorithms/tree/master/data_structures/binary_tree)<br>
 
 This section is a binary search tree.
 It organizes nodes in a binary structure from the root out.
@@ -190,7 +191,7 @@ Aquiring the neighbors of a vertex
 Breadth first traversal
 Path (sequential edges) check
 
-[link: code](https://github.com/jasonb315/data_structures_and_algorithms/tree/master/data_structures/graph)<br>
+[code](https://github.com/jasonb315/data_structures_and_algorithms/tree/master/data_structures/graph)<br>
 
 In graph.py:
 Create a Class for a Graph which creates an empty Graph when instantiated
@@ -216,7 +217,7 @@ path weight accumulation:
 
 Hash Table.<br>
 
-[link: coded solution](https://github.com/jasonb315/data_structures_and_algorithms/tree/master/data_structures/hash_table)<br>
+[code](https://github.com/jasonb315/data_structures_and_algorithms/tree/master/data_structures/hash_table)<br>
 
 * `.put(key, value)` - store a value with the given key
 * `.get(key)` - get the value associated with the given key
@@ -248,6 +249,19 @@ Selection sort!
 
 ---
 
+<a id="merge_sort"></a>
+### 2. merge_sort <br>
+
+Merge sort!
+
+[code](https://github.com/jasonb315/data_structures_and_algorithms/tree/master/sorting_algos/merge)
+
+![title](https://github.com/jasonb315/data_structures_and_algorithms/blob/master/assets/merge_sort.jpg) <br>
+
+[:top: Contents](#contents)
+
+---
+
 
 ## ALGORITHIMS
 
@@ -257,7 +271,7 @@ Selection sort!
 
 Write a function called reverse_arr that takes an array as an argument and returns it in reverse.
 
-[link: coded solution](https://github.com/jasonb315/data_structures_and_algorithms/tree/master/challenges/reverse_array)
+[code](https://github.com/jasonb315/data_structures_and_algorithms/tree/master/challenges/reverse_array)
 
 ![title](https://github.com/jasonb315/data_structures_and_algorithms/blob/master/assets/reverse_array.jpg) <br>
 
@@ -272,7 +286,7 @@ Write a function called insertShiftArray which takes in an array and the value t
 IN [4,8,15,23,42], 16<br>
 OUT [4,8,15,16,23,42]<br>
 
-[link: coded solution](https://github.com/jasonb315/data_structures_and_algorithms/tree/master/challenges/array_shift)
+[code](https://github.com/jasonb315/data_structures_and_algorithms/tree/master/challenges/array_shift)
 
 ![title](https://github.com/jasonb315/data_structures_and_algorithms/blob/master/assets/01_insert_shift_arr.jpg) <br>
 
@@ -285,7 +299,7 @@ OUT [4,8,15,16,23,42]<br>
 
 Write a function called BinarySearch which takes in 2 parameters: a sorted array and the search key. Without utilizing any of the built-in methods available to your language, return the index of the array’s element that is equal to the search key, or -1 if the element does not exist.
 
-[link: coded solution](https://github.com/jasonb315/data_structures_and_algorithms/tree/master/challenges/array_binary_search)
+[code](https://github.com/jasonb315/data_structures_and_algorithms/tree/master/challenges/array_binary_search)
 
 ![title](https://github.com/jasonb315/data_structures_and_algorithms/blob/master/assets/02_array_binary_search.jpg) <br>
 
@@ -298,7 +312,7 @@ Write a function called BinarySearch which takes in 2 parameters: a sorted array
 
 Ask the candidate to write a function to rotate a 3x3 matrix (an array of integers), by 90 degrees clockwise.
 
-[link: coded solution](https://github.com/jasonb315/data_structures_and_algorithms/tree/master/challenges/matrix_rotate)
+[code](https://github.com/jasonb315/data_structures_and_algorithms/tree/master/challenges/matrix_rotate)
 
 ![title](https://github.com/jasonb315/data_structures_and_algorithms/blob/master/assets/matrix_rotate.jpg) <br>
 
@@ -311,7 +325,7 @@ Ask the candidate to write a function to rotate a 3x3 matrix (an array of intege
 
 Ask the candidate to write a function to accepts an integer, and returns the nth number in the Fibonacci sequence.
 
-[link: coded solution](https://github.com/jasonb315/data_structures_and_algorithms/tree/master/challenges/nth_fibonacci)
+[code](https://github.com/jasonb315/data_structures_and_algorithms/tree/master/challenges/nth_fibonacci)
 
 ![title](https://github.com/jasonb315/data_structures_and_algorithms/blob/master/assets/nth%20fibonacci.jpg) <br>
 
@@ -324,7 +338,7 @@ Ask the candidate to write a function to accepts an integer, and returns the nth
 
 Write a function called mergeLists which takes two linked lists as arguments. Zip the two linked lists together into one so that the nodes alternate between the two lists and return a reference to the head of the zipped list. Try and keep additional space down to O(1). You have access to the Node class and all the properties on the Linked List class as well as the methods created in previous challenges.
 
-[link: coded solution](https://github.com/jasonb315/data_structures_and_algorithms/tree/master/challenges/ll_merge)
+[code](https://github.com/jasonb315/data_structures_and_algorithms/tree/master/challenges/ll_merge)
 
 ![title](https://github.com/jasonb315/data_structures_and_algorithms/blob/master/assets/ll_merge.jpg) <br>
 
@@ -355,7 +369,7 @@ Implement the following methods:
 enqueue(animal): adds animal to the shelter. animal can be either a dog or a cat object.
 dequeue(pref): returns either a dog or a cat. If pref, a string, is ‘cat’ return the longest-waiting cat. If pref is ‘dog’, return the longest-waiting dog. For anything else, return either a cat or a dog.
 
-[link: coded solution](https://github.com/jasonb315/data_structures_and_algorithms/tree/master/challenges/fifo_animal_shelter)
+[code](https://github.com/jasonb315/data_structures_and_algorithms/tree/master/challenges/fifo_animal_shelter)
 
 ![title](https://github.com/jasonb315/data_structures_and_algorithms/blob/master/assets/fifo_animal_shelter.jpg) <br>
 
@@ -372,7 +386,7 @@ Round Brackets : ()
 Square Brackets : []
 Curly Brackets : {}
 
-[link: coded solution](https://github.com/jasonb315/data_structures_and_algorithms/tree/master/challenges/multi_bracket_validation)
+[code](https://github.com/jasonb315/data_structures_and_algorithms/tree/master/challenges/multi_bracket_validation)
 
 ![title](https://github.com/jasonb315/data_structures_and_algorithms/blob/master/assets/multi_bracket_validation.jpg) <br>
 
@@ -398,7 +412,7 @@ Without utilizing any of the built-in library methods available to your language
 Write a function that accepts a lengthy string parameter.
 Without utilizing any of the built-in library methods available to your language, return the first word to occur more than once in that provided string.
 
-[link: coded solution](https://github.com/jasonb315/data_structures_and_algorithms/tree/master/challenges/tree_intersection)
+[code](https://github.com/jasonb315/data_structures_and_algorithms/tree/master/challenges/tree_intersection)
 
 ![title](https://github.com/jasonb315/data_structures_and_algorithms/blob/master/assets/tree_intersection.jpg) <br>
 

@@ -257,6 +257,7 @@ Merge sort!
 [code](https://github.com/jasonb315/data_structures_and_algorithms/tree/master/sorting_algos/merge)
 
 ![title](https://github.com/jasonb315/data_structures_and_algorithms/blob/master/assets/merge_sort.jpg) <br>
+![title](https://github.com/jasonb315/data_structures_and_algorithms/blob/master/assets/merge_sort_2.jpg) <br>
 
 [:top: Contents](#contents)
 

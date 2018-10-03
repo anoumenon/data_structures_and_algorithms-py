@@ -23,6 +23,7 @@ person = 'Jason Burns'
 1. [selection_sort](#selection_sort)
 1. [merge_sort](#merge_sort)
 1. [quick_sort](#quick_sort)
+1. [radix_sort](#radix_sort)
 
 ##### Algorithms <br>
 
@@ -275,6 +276,19 @@ Write a function that accepts an array of integers, and returns an array sorted 
 
 ![title](https://github.com/jasonb315/data_structures_and_algorithms/blob/master/assets/merge_sort.jpg) <br>
 ![title](https://github.com/jasonb315/data_structures_and_algorithms/blob/master/assets/merge_sort_2.jpg) <br>
+
+[:top: Contents](#contents)
+
+---
+
+<a id="radix_sort"></a>
+### 2. radix_sort <br>
+
+Write a function that accepts an array of integers, and returns an array sorted by a radix algorithm.
+
+[code](https://github.com/jasonb315/data_structures_and_algorithms/tree/master/sorting_algos/radix)
+
+![title](https://github.com/jasonb315/data_structures_and_algorithms/blob/master/assets/radix.jpg) <br>
 
 [:top: Contents](#contents)
 

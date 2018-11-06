@@ -38,7 +38,7 @@ person = 'Jason Burns'
 1. [multi_bracket_validation](#multi_bracket_validation)
 1. [repeated_word](#repeated_word)
 1. [tree_intersection](#tree_intersection)
-
+<!-- TODO map filter reduce -->
 
 ---
 
@@ -52,14 +52,7 @@ Single direction linked list class.<br>
 
 [code](https://github.com/jasonb315/data_structures_and_algorithms/tree/master/data_structures/linked_lists)<br>
 
-Methods;<br>
-prepend: create and attach a node with a passed value to the head of the list.<br>
-append: create and attach a node with a passed value to the tail of the list.<br>
-includes: check the list for a given value. returns a bool.<br>
-read_off: prints a list of the values of the linked list in order from the head.<br>
-insert_before: create and attach a node with a passed value before a given value.<br>
-insert_after: create and attach a node with a passed value after a given value.<br>
-kth_from_end: print and return the value of a node a given number from the end.<br>
+In computer science, a linked list is a linear collection of data elements, whose order is not given by their physical placement in memory. Instead, each element points to the next. It is a data structure consisting of a collection of nodes which together represent a sequence.<br>
 
 
 kth_from_end:
@@ -78,19 +71,13 @@ insert_after:
 <a id="stack"></a>
 ### 2. stack <br>
 
-Single direction linked list class for use as a stack.<br>
-
 [code](https://github.com/jasonb315/data_structures_and_algorithms/tree/master/data_structures/stack)<br>
 
-In stack.py:
-Create a Class for a Stack which creates an empty Stack when instantiated
-This class should be aware of a default None value assigned to top when the isntance is created
-This class should be aware of the len of the stack, which represents the count of Nodes in the stack at any time
-This class should have the ability to accept an iterable as an argument when instantiated, such as [1, 2, 3, 4], and creates a new Node in the stack for each value in the iterable
-Define any further magic methods such as len and str to support user functionality and informative responses
-Define a method called push which takes any value as an argument and adds that value to the top of the stack with an O(1) Time performance
-Define a method called pop which takes no arguments and removes / returns the Node at the top of the stack
-Define a method called peek which takes no arguments and returns the Node at the top of the stack
+In computer science, a stack is an abstract data type that serves as a collection of elements, with two principal operations:<br>
+
+push, which adds an element to the collection, and
+pop, which removes the most recently added element that was not yet removed.<br>
+The order in which elements come off a stack gives rise to its alternative name, LIFO (last in, first out). Additionally, a peek operation may give access to the top without modifying the stack.<br>
 
 [:top: Contents](#contents)
 
@@ -104,15 +91,7 @@ Double linked list class for use as a queue.<br>
 
 [code](https://github.com/jasonb315/data_structures_and_algorithms/tree/master/data_structures/queue)<br>
 
-In queue.py:
-Create a Class for a Queue which creates an empty Queue when instantiated
-This class should be aware of a default None value assigned to front when the isntance is created
-This class should be aware of a default None value assigned to back when the isntance is created
-This class should be aware of the len of the queue, which represents the count of Nodes in the queue at any time
-This class should have the ability to accept an iterable as an argument when instantiated, such as [1, 2, 3, 4], and creates a new Node in the queue for each value in the iterable
-Define any further magic methods such as len and str to support user functionality and informative responses
-Define a method called enqueue which takes any value as an argument and adds that value to the back of the queue with an O(1) Time performance
-Define a method called dequeue which takes no arguments and removes / returns the Node at the front of the queue
+In computer science, a queue is a particular kind of abstract data type (ADT) or collection in which the entities in the collection are kept in order and the principal (or only) operations on the collection are the addition of entities to the rear terminal position, known as enqueue, and removal of entities from the front terminal position, known as dequeue. This makes the queue a First-In-First-Out (FIFO) data structure.<br>
 
 [:top: Contents](#contents)
 
@@ -121,7 +100,7 @@ Define a method called dequeue which takes no arguments and removes / returns th
 <a id="binary_tree"></a>
 ### 4. binary_tree <br>
 
-Nodes with up to two children each stemming from a root.<br>
+In computer science, a binary tree is a tree data structure in which each node has at most two children, which are referred to as the left child and the right child.<br>
 
 [code](https://github.com/jasonb315/data_structures_and_algorithms/tree/master/data_structures/binary_tree)<br>
 
@@ -151,8 +130,8 @@ Brinary search tree.<br>
 
 [code](https://github.com/jasonb315/data_structures_and_algorithms/tree/master/data_structures/binary_tree)<br>
 
-This section is a binary search tree.
-It organizes nodes in a binary structure from the root out.
+In computer science, binary search trees (BST), sometimes called ordered or sorted binary trees, are a particular type of container: data structures that store "items" (such as numbers, names etc.) in memory. They allow fast lookup, addition and removal of items, and can be used to implement either dynamic sets of items, or lookup tables that allow finding an item by its key (e.g., finding the phone number of a person by name).<br>
+
 Instantiation of a tree:
 ```python
 acorn = BinaryTree()
@@ -184,21 +163,9 @@ Breadth first traversal:
 <a id="graph"></a>
 ### 6. graph <br>
 
-Non leanear vertex relationships.<br>
-This graph class containes methods for:
-Adding a vertex
-Checking for a vertex
-Adding an edge between verts
-Aquiring the neighbors of a vertex
-Breadth first traversal
-Path (sequential edges) check
+A Graph is a non-linear data structure consisting of nodes and edges. The nodes are sometimes also referred to as vertices and the edges are lines or arcs that connect any two nodes in the graph.<br>
 
 [code](https://github.com/jasonb315/data_structures_and_algorithms/tree/master/data_structures/graph)<br>
-
-In graph.py:
-Create a Class for a Graph which creates an empty Graph when instantiated
-Define any further magic methods such as len and str to support user functionality and informative responses
-Define methods to add, create, count, and connect node in the graph
 
 ![title](https://github.com/jasonb315/data_structures_and_algorithms/blob/master/assets/graph.jpg) <br>
 
@@ -220,6 +187,8 @@ path weight accumulation:
 Hash Table.<br>
 
 [code](https://github.com/jasonb315/data_structures_and_algorithms/tree/master/data_structures/hash_table)<br>
+
+In computing, a hash table (hash map) is a data structure that implements an associative array abstract data type, a structure that can map keys to values. A hash table uses a hash function to compute an index into an array of buckets or slots, from which the desired value can be found.<br>
 
 * `.put(key, value)` - store a value with the given key
 * `.get(key)` - get the value associated with the given key

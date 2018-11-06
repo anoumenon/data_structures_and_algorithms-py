@@ -42,3 +42,24 @@ def test_fixture_sort(shuffle_list, sorted_list):
     """sorting of unordered
     """
     assert sorted_list == radix_sort(shuffle_list)
+
+
+def test_with_zero_value_raises_error():
+    """Test an array with zero value should raise exception
+    """
+    # with pytest.raises(AssertionError):
+    assert radix_sort([10, 10, 11, 10, 10]) == [10, 10, 10, 10, 11]
+
+
+def test_with_zero_value_raises_error():
+    """Test an array with zero value should raise exception
+    """
+    # with pytest.raises(AssertionError):
+    assert radix_sort([10, 10, 100, 10, 10]) == [10, 10, 10, 10, 100]
+
+
+def test_with_intermediate_zero_value():
+    """Test an array with zero value should raise exception
+    """
+    # with pytest.raises(AssertionError):
+    assert radix_sort([10001, 1001, 101, 11, 1]) == [1, 11, 101, 1001, 10001]

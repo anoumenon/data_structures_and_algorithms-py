@@ -7,7 +7,6 @@ def radix_sort(arr):
     modulus = 10
     div = 1
     while True:
-        # empty array, [[] for i in range(10)]
         new_list = [[] for i in range(0, 10)]
         for value in arr:
             least_digit = value % modulus

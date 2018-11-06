@@ -73,7 +73,7 @@ insert_after:
 
 [code](https://github.com/jasonb315/data_structures_and_algorithms/tree/master/data_structures/stack)<br>
 
-In computer science, a stack is an abstract data type that serves as a collection of elements, with two principal operations:<br>
+A stack is an abstract data type that serves as a collection of elements, with two principal operations:<br>
 
 push, which adds an element to the collection, and
 pop, which removes the most recently added element that was not yet removed.<br>
@@ -91,7 +91,7 @@ Double linked list class for use as a queue.<br>
 
 [code](https://github.com/jasonb315/data_structures_and_algorithms/tree/master/data_structures/queue)<br>
 
-In computer science, a queue is a particular kind of abstract data type (ADT) or collection in which the entities in the collection are kept in order and the principal (or only) operations on the collection are the addition of entities to the rear terminal position, known as enqueue, and removal of entities from the front terminal position, known as dequeue. This makes the queue a First-In-First-Out (FIFO) data structure.<br>
+A queue is a particular kind of abstract data type (ADT) or collection in which the entities in the collection are kept in order and the principal (or only) operations on the collection are the addition of entities to the rear terminal position, known as enqueue, and removal of entities from the front terminal position, known as dequeue. This makes the queue a First-In-First-Out (FIFO) data structure.<br>
 
 [:top: Contents](#contents)
 
@@ -100,7 +100,7 @@ In computer science, a queue is a particular kind of abstract data type (ADT) or
 <a id="binary_tree"></a>
 ### 4. binary_tree <br>
 
-In computer science, a binary tree is a tree data structure in which each node has at most two children, which are referred to as the left child and the right child.<br>
+A binary tree is a tree data structure in which each node has at most two children, which are referred to as the left child and the right child.<br>
 
 [code](https://github.com/jasonb315/data_structures_and_algorithms/tree/master/data_structures/binary_tree)<br>
 
@@ -130,7 +130,7 @@ Brinary search tree.<br>
 
 [code](https://github.com/jasonb315/data_structures_and_algorithms/tree/master/data_structures/binary_tree)<br>
 
-In computer science, binary search trees (BST), sometimes called ordered or sorted binary trees, are a particular type of container: data structures that store "items" (such as numbers, names etc.) in memory. They allow fast lookup, addition and removal of items, and can be used to implement either dynamic sets of items, or lookup tables that allow finding an item by its key (e.g., finding the phone number of a person by name).<br>
+Binary search trees (BST), sometimes called ordered or sorted binary trees, are a particular type of container: data structures that store "items" (such as numbers, names etc.) in memory. They allow fast lookup, addition and removal of items, and can be used to implement either dynamic sets of items, or lookup tables that allow finding an item by its key (e.g., finding the phone number of a person by name).<br>
 
 Instantiation of a tree:
 ```python
@@ -188,7 +188,7 @@ Hash Table.<br>
 
 [code](https://github.com/jasonb315/data_structures_and_algorithms/tree/master/data_structures/hash_table)<br>
 
-In computing, a hash table (hash map) is a data structure that implements an associative array abstract data type, a structure that can map keys to values. A hash table uses a hash function to compute an index into an array of buckets or slots, from which the desired value can be found.<br>
+A hash table (hash map) is a data structure that implements an associative array abstract data type, a structure that can map keys to values. A hash table uses a hash function to compute an index into an array of buckets or slots, from which the desired value can be found.<br>
 
 * `.put(key, value)` - store a value with the given key
 * `.get(key)` - get the value associated with the given key
@@ -210,7 +210,7 @@ Left join:
 <a id="selection_sort"></a>
 ### 1. selection_sort <br>
 
-Selection sort!
+Selection sort.
 
 [code](https://github.com/jasonb315/data_structures_and_algorithms/tree/master/sorting_algos/selection)
 

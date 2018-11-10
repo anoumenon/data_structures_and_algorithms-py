@@ -39,7 +39,12 @@ person = 'Jason Burns'
 1. [multi_bracket_validation](#multi_bracket_validation)
 1. [repeated_word](#repeated_word)
 1. [tree_intersection](#tree_intersection)
+
+1. [map](#map)
+1. [filter](#filter)
+1. [reduce](#reduce)
 <!-- TODO map filter reduce -->
+
 
 ---
 
@@ -427,10 +432,44 @@ Without utilizing any of the built-in library methods available to your language
 
 ---
 
+<a id="map"></a>
+### 11. Map <br>
 
+Applies a function to all the items in an input list.
 
+<!-- [code](https://github.com/jasonb315/data_structures_and_algorithms/tree/master/challenges/tree_intersection)
 
-tree_intersection
+![title](https://github.com/jasonb315/data_structures_and_algorithms/blob/master/assets/tree_intersection.jpg) <br> -->
+
+[:top: Contents](#contents)
+
+---
+
+<a id="filter"></a>
+### 12. Filter <br>
+
+Applies a function to all the items in an input list.
+
+<!-- [code](https://github.com/jasonb315/data_structures_and_algorithms/tree/master/challenges/tree_intersection)
+
+![title](https://github.com/jasonb315/data_structures_and_algorithms/blob/master/assets/tree_intersection.jpg) <br> -->
+
+[:top: Contents](#contents)
+
+---
+
+<a id="reduce"></a>
+### 13. Reduce <br>
+
+Applies a rolling computation to sequential pairs of values in a list.
+
+<!-- [code](https://github.com/jasonb315/data_structures_and_algorithms/tree/master/challenges/tree_intersection)
+
+![title](https://github.com/jasonb315/data_structures_and_algorithms/blob/master/assets/tree_intersection.jpg) <br> -->
+
+[:top: Contents](#contents)
+
+---
 <!--
 <a id="NAME"></a>
 ### X. NAME <br>

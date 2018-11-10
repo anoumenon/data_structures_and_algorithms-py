@@ -24,6 +24,7 @@ person = 'Jason Burns'
 1. [merge_sort](#merge_sort)
 1. [quick_sort](#quick_sort)
 1. [radix_sort](#radix_sort)
+1. [insertion_sort](#insertion_sort)
 
 ##### Algorithms <br>
 
@@ -236,28 +237,36 @@ Write a function that accepts an array of integers, and returns an array sorted 
 ---
 
 
-<a id="merge_sort"></a>
-### 2. merge_sort <br>
+<a id="quick_sort"></a>
+### 3. quick_sort <br>
 
-Write a function that accepts an array of integers, and returns an array sorted by a recursive quicksort algorithm.
+Quicksort (sometimes called partition-exchange sort) is an efficient sorting algorithm, serving as a systematic method for placing the elements of an array in order. Developed by British computer scientist Tony Hoare in 1959[1] and published in 1961,[2] it is still a commonly used algorithm for sorting. When implemented well, it can be about two or three times faster than its main competitors, merge sort and heapsort
 
-[code](https://github.com/jasonb315/data_structures_and_algorithms/tree/master/sorting_algos/merge)
-
-![title](https://github.com/jasonb315/data_structures_and_algorithms/blob/master/assets/merge_sort.jpg) <br>
-![title](https://github.com/jasonb315/data_structures_and_algorithms/blob/master/assets/merge_sort_2.jpg) <br>
+[code](https://github.com/jasonb315/data_structures_and_algorithms/tree/master/sorting_algos/quicksort)
 
 [:top: Contents](#contents)
 
 ---
 
 <a id="radix_sort"></a>
-### 2. radix_sort <br>
+### 4. radix_sort <br>
 
 Write a function that accepts an array of integers, and returns an array sorted by a radix algorithm.
 
 [code](https://github.com/jasonb315/data_structures_and_algorithms/tree/master/sorting_algos/radix)
 
 ![title](https://github.com/jasonb315/data_structures_and_algorithms/blob/master/assets/radix.jpg) <br>
+
+[:top: Contents](#contents)
+
+---
+
+<a id="insertion_sort"></a>
+### 5. insertion_sort <br>
+
+Insertion sort is a simple sorting algorithm that builds the final sorted array (or list) one item at a time. It is much less efficient on large lists than more advanced algorithms such as quicksort, heapsort, or merge sort.
+
+[code](https://github.com/jasonb315/data_structures_and_algorithms/tree/master/sorting_algos/insertionsort)
 
 [:top: Contents](#contents)
 

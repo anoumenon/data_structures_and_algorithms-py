@@ -220,21 +220,6 @@ Selection sort.
 
 ---
 
-<a id="merge_sort"></a>
-### 2. merge_sort <br>
-
-Write a function that accepts an array of integers, and returns an array sorted by a recursive mergesort algorithm.
-
-
-[code](https://github.com/jasonb315/data_structures_and_algorithms/tree/master/sorting_algos/merge)
-
-![title](https://github.com/jasonb315/data_structures_and_algorithms/blob/master/assets/merge_sort.jpg) <br>
-![title](https://github.com/jasonb315/data_structures_and_algorithms/blob/master/assets/merge_sort_2.jpg) <br>
-
-[:top: Contents](#contents)
-
----
-
 
 <a id="merge_sort"></a>
 ### 2. merge_sort <br>

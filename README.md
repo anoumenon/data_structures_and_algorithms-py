@@ -1,9 +1,5 @@
 # Data Structures and Algorithms in Python
-```python
-school = 'Code Fellows'
-cohort = 'seattle-py-401d9'
-person = 'Jason Burns'
-```
+
 ---
 <a id="contents"></a>
 
